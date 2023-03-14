@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <link rel="stylesheet" href="./css/magazine-sec.css">
+    <!-- tailwinf=d css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-top animate__animated animate__bounceInLeft">
+            <div class="logo">
+                <img src="./img/main/logo.svg" alt="">
+            </div>
+            <div class="messengers">
+                <div class="center-msg">
+                    <span>Наши мессенджеры</span>
+                    <a href="#"><img src="./img/main/navbar-icon1.svg" alt=""></a>
+                    <a href="#"><img src="./img/main/navbar-icon2.svg" alt=""></a>
+                </div>
+                <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+            </div>
+            <div class="sum">
+                <p><b>'zł&nbsp;</b>00,00</p>
+                <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00 </p>
+            </div>
+            <button class="btn zakaz">Оформить заказ</button>
+            <div><h3 class="point">Вход /Регистрация</h3></div>
+            <div style=" align-items: center; gap: 10px;" class="hidden sm:flex">
+                <img src="./img/main/navbar-icon3.svg" alt="">
+                <select name="" id="country" >
+                    <option value="UKR">UKR</option>
+                    <option value="BRT">BRT</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+        </div>
+        <div class="navbar-bottom animate__animated animate__bounceInRight">
+            <li><a href="#">О компании </a></li>
+            <li><a href="#">Список магазину</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Вопрос -ответ</a></li>
+            <li><a href="#">Калькулятор </a></li>
+            <li><a href="#">Контакты </a></li>
+            <li><a href="#"><button class="pomosh"><i class="fa-solid fa-question"></i> Помощь в поиске товаров </button></a></li>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="pt-[180px] pl-[75px] bg-[#D2D2D2] flex flex-wrap md:flex-nowrap gap-5 pb-[30px] pr-10 md:pr-2">
+        <!-- sidebar-container -->
+        <div class="flex flex-col gap-1 w-full animate__animated animate__bounceInDown" data-aos="fade-down"
+        data-aos-duration="2000">
+            <div class="flex gap-2 items-center bg-white rounded-t-md px-1">
+                <p class="w-10 h-10 bg-[#9B51E0] border-red-500 border-2 rounded-full text-white flex items-center justify-center">BR</p>
+                <div>
+                    <h2 class="font-medium">Поварницына Диана</h2>
+                    <p class="text-gray-600">lawson@example.com</p>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+                <img src="./img/info deliv for admin/user1.svg" alt="">
+                <div>
+                    <h2 class="font-bold">Мои заказы</h2>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+                <img src="./img/info deliv for admin/user2.svg" alt="">
+                <div>
+                    <h2 class="font-bold">Мои отзывы</h2>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+                <img src="./img/info deliv for admin/user3.svg" alt="">
+                <div>
+                    <h2 class="font-bold">Моя переписка</h2>
+                </div>
+            </div>
+        </div>
+        <!-- fa-chevron-right -->
+
+        <!-- Моя переписка -->
+        <div class="w-[180%] pr-5 hidden">
+            <div class="flex justify-between flex-wrap lg:flex-nowrap gap-10 items-center animate__animated animate__backInUp">
+                <div class="flex gap-1">
+                    <span class="block w-1 h-7 bg-red-500"></span>
+                    <h2 class="text-xl font-bold">Моя переписка</h2>
+                </div>
+                <button class="py-2 px-5 border border-white hover:border-red-500 hover:text-red-500 hover:bg-white transition-colors duration-200 bg-red-500 text-white rounded-lg">Создать запрос</button>
+                <div class="flex gap-2">
+                    <p class="font-bold">Связь через мессенджеры:</p>
+                    <img src="./img/info deliv/mess3.svg" class="hover:opacity-70 hover:scale-110 transition-transform cursor-pointer">
+                    <img src="./img/info deliv/mess1.svg" class="hover:opacity-70 hover:scale-110 transition-transform cursor-pointer">
+                    <img src="./img/info deliv/mess2.svg" class="hover:opacity-70 hover:scale-110 transition-transform cursor-pointer">
+                </div>
+            </div>
+            <div class="my-7 bg-white py-2 px-2 rounded-lg flex justify-between animate__animated animate__bounceInUp">
+                <label class="relative block w-4/12">
+                    <span class="sr-only"></span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                      <svg class="h-5 w-5 fill-slate-300">
+                        <img class="absolute" src="./img/info deliv/search.svg" alt="">
+                      </svg>
+                    </span>
+                    <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                    <img src="./img/info deliv/enter-btn.svg" class="absolute right-0 top-0 hidden md:block" alt="">
+                  </label>
+                  <label class="relative block w-3/12 text-xl">
+                    <span class="sr-only"></span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                      <svg class="h-5 w-5 fill-slate-300">
+                      </svg>
+                    </span>
+                    <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="date" name="search"/>
+                  </label>
+            </div>
+
+            <div class=" flex gap-4 font-bold">
+                <p>Дата</p>
+                <p>Описание</p>
+            </div>
+            <div class="flex gap-5 items-start animate__animated animate__bounceInUp wow justify-between sm:flex-nowrap flex-wrap">
+                
+                <div>
+                    <div class="flex items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                    <div class="flex border-t-0 items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                    <div class="flex border-t-0 items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                    <div class="flex border-t-0 items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                    <div class="flex border-t-0 items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                    <div class="flex border-t-0 items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                    <div class="flex border-t-0 items-center gap-4 justify-between text-base text-[#2D2D2DE5] border-y pr-3 border-gray-600 ">
+                        <div class="flex gap-5 items-center">
+                            <p>13.04.2020</p>
+                            <i class="fa-solid fa-arrow-down text-[#00BA88]"></i>
+                            <p>Замовлення №123456789</p>
+                        </div>
+                        <i class="fa-solid fa-check text-[#00BA88]"></i>
+                    </div>
+                </div>
+                <div>
+                    <b>Шановний (-а)</b>
+                    <div>
+                        Вітаємо! Ваша заявка (№ 710315828) для магазину E-bay прийнята. <br> <br>
+
+                        Загальні дані по заявці: <br>
+                        Всього товарів: 1 <br>
+                        1. Повна панорамна маска для плавання FREE BREATH (L/XL) M2068G Black з кріпленням для камери <br>
+                        Кількість: 1 <br>
+                        Ціна: 318.00 грн. <br>
+                        Сума: 318 грн. <br> <br>
+                        
+                        <b>Всего: 318.00 грн.</b> <br> <br>
+                        
+                        Дякуємо за Вашу заявку. Ми зв'яжемося з Вами для підтвердження. <br>
+                        Будемо раді відповісти на Ваші запитання. Ми завжди готові допомогти Вам! <br> <br>
+                        
+                        З повагою, команда  сайту
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Мои заказы -->
+        <div class="pr-10 hidden">
+            <div class="flex gap-3 items-center text-xl font-bold">
+                <span class="block w-1 h-8 bg-red-600"></span>
+                <h2>Мои заказы</h2>
+            </div>
+            <div class="mt-4 flex-wrap md:flex-nowrap items-start lg:items-center text-[#2D2D2DE5] bg-white py-2 px-3  flex  gap-2  animate__animated animate__bounceInLeft">
+                <span class="block w-1 h-10 bg-green-500"></span>
+                <div>
+                    <p>№  00 00 00  от 17.04.21</p>
+                    <p class="font-bold text-black">Выполнен</p>
+                </div>
+                <div>
+                    <p class="text-[#9D7B6D]">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)</p>
+                    <p class="">состояние:	Новое, Пол:	Мужской, тип	Городской</p>
+                </div>
+                <div>
+                    <p>Сумма заказа</p>
+                    <b>	167.67 грн.</b>
+                </div>
+                <button class="bg-[#EA0C0C] border border-white hover:bg-white hover:text-[#EA0C0C] hover:border-[#EA0C0C] transition-colors duration-300  text-white py-2 px-4 rounded-md">Оплатить</button>
+                <img src="./img/info deliv/question.svg" alt="">
+                <img src="./img/info deliv/add-btn.svg" alt="">
+            </div>
+            <div class="text-[#2D2D2DE5] bg-white py-2 px-3 border flex flex-wrap md:flex-nowrap items-start lg:items-center gap-2 animate__animated animate__bounceInRight">
+                <span class="block w-1 h-10 bg-red-600"></span>
+                <div>
+                    <p>№  00 00 00  от 17.04.21</p>
+                    <p class="font-bold text-black">Выполнен</p>
+                </div>
+                <div>
+                    <p class="text-[#9D7B6D]">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)</p>
+                    <p class="">состояние:	Новое, Пол:	Мужской, тип	Городской</p>
+                </div>
+                <div>
+                    <p>Сумма заказа</p>
+                    <b>	167.67 грн.</b>
+                </div>
+                <button class="bg-[#EA0C0C] border border-white hover:bg-white hover:text-[#EA0C0C] hover:border-[#EA0C0C] transition-colors duration-300  text-white py-2 px-4 rounded-md">Оплатить</button>
+                <img src="./img/info deliv/question.svg" alt="">
+                <img src="./img/info deliv/add-btn.svg" alt="">
+            </div>
+            <div class="text-[#2D2D2DE5] bg-white py-2 px-3 border flex flex-wrap md:flex-nowrap items-start lg:items-center gap-1 animate__animated animate__bounceInLeft">
+                <div class="flex gap-2 items-center">
+                    <span class="block w-[5px] h-14 bg-yellow-400"></span>
+                    <div>
+                        <p>№  00 00 00  от 17.04.21</p>
+                        <p class="font-bold text-black">Выполнен</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-[#9D7B6D]">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)</p>
+                    <p class="">состояние:	Новое, Пол:	Мужской, тип	Городской</p>
+                </div>
+                <div class="flex items-start md:gap-1 gap-3 md:w-3/12 w-5/12">
+                    <img src="./img/info deliv/shape.svg" alt="">
+                    <p>В течении 30 минут Ваш заказ будет обработаем и можно будет внести предоплату/оплату по заказу</p>
+                </div>
+                <div >
+                    <p>Сумма заказа</p>
+                    <b>	167.67 грн.</b>
+                </div>
+                <img src="./img/info deliv/add-btn.svg" alt="">
+
+            </div>
+
+            <div class="py-2 animate__animated animate__bounceInDown">
+                <div class="flex gap-2 items-center">
+                    <span class="block w-[5px] h-10 bg-yellow-400"></span>
+                    <div>
+                        <p>№  00 00 00  от 17.04.21</p>
+                        <p class="font-bold text-black">Выполнен</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-wrap md:flex-nowrap animate__animated animate__backInRight wow">
+                    <div>
+                        <p>Информация о заказе:</p> <hr class="border-black">
+                        <p>Перевозчик: <b>Новая Почта</b></p>
+                        <p>Адрес: <b>4517 Washington Ave. Manchester, Kentucky 39495</b></p>
+                        <p>Получатель: <b>Крестьянинов Валерьян</b></p>
+                        <p>Телефон: <b>38067 123 45 67</b></p>
+                        <p>e-mail: <b>debra.holt@example.com</b></p>
+                        <div class="pt-5">
+                            <p class="font-bold">Доставка</p> <hr class="border-black">
+                            <div class="flex gap-2">
+                                <img src="./img/info deliv/rec-490.svg" alt="">
+                                <div>
+                                    <p class="text-[#2D2D2D99]">Дата отправки <b class="text-black">01.05.2021</b></p>
+                                    <p class="text-[#2D2D2D99]">Накладная: <b class="text-black"> 00000000000000</b></p>
+                                    <p class="text-[#2D2D2D99]">Количество мест<b class="text-black">01</b></p>
+                                    <p class="text-red-500 font-medium">Отследить посылку</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <b>Ваш заказ:</b>
+                        <hr class="border-black">
+                        <table class="table-auto  ">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Сумма заказа</th>
+                                    <th>К-во</th>
+                                    <th>Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-[#9D7B6D] w-2/4">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)<p class="text-black">состояние:	Новое, Пол:	Мужской, тип	Городской
+                                    </p>
+                                    </td>
+                                <td>167.67 грн.</td>
+                                <td>1</td>
+                                <td>167.67
+                                    грн.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-[#9D7B6D] w-2/4">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)<p class="text-black">состояние:	Новое, Пол:	Мужской, тип	Городской
+                                    </p>
+                                    </td>
+                                <td>167.67 грн.</td>
+                                <td>1</td>
+                                <td>167.67
+                                    грн.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-[#9D7B6D] w-2/4">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)<p class="text-black">состояние:	Новое, Пол:	Мужской, тип	Городской
+                                    </p>
+                                    </td>
+                                <td>167.67 грн.</td>
+                                <td>1</td>
+                                <td>167.67
+                                    грн.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-[#9D7B6D] w-2/4">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)<p class="text-black">состояние:	Новое, Пол:	Мужской, тип	Городской
+                                    </p>
+                                    </td>
+                                <td>167.67 грн.</td>
+                                <td>1</td>
+                                <td>167.67
+                                    грн.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-[#9D7B6D] w-2/4">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)<p class="text-black">состояние:	Новое, Пол:	Мужской, тип	Городской
+                                    </p>
+                                    </td>
+                                <td>167.67 грн.</td>
+                                <td>1</td>
+                                <td>167.67
+                                    грн.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-[#9D7B6D] w-2/4">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)<p class="text-black">состояние:	Новое, Пол:	Мужской, тип	Городской
+                                    </p>
+                                    </td>
+                                <td>167.67 грн.</td>
+                                <td>1</td>
+                                <td>167.67
+                                    грн.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex justify-end">
+                            <div class="flex text-xl justify-between gap-16">
+                                <b>Итого:</b>
+                                <b>	4167.67 грн.</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between flex-col sm:flex-row  py-4 items-start gap-2 sm:gap-0 animate__animated animate__backInLeft wow">
+                    <button class="bg-[#95A4AA] border border-white hover:bg-white hover:text-[#95A4AA] hover:border-[#95A4AA] transition-colors duration-300 text-white py-2 px-4 rounded-md">Редактировать</button>
+                    <button class="bg-[#95A4AA] border border-white hover:bg-white hover:text-[#95A4AA] hover:border-[#95A4AA] transition-colors duration-300 text-white py-2 px-4 rounded-md">Повторить заказ</button>
+                    <button class="bg-[#EA0C0C] border border-white hover:bg-white hover:text-[#EA0C0C] hover:border-[#EA0C0C] transition-colors duration-300  text-white py-2 px-4 rounded-md">Оплатить</button>
+                </div>
+                <div class="mt-4 text-[#2D2D2DE5] bg-white py-2 px-3  flex flex-wrap md:flex-nowrap items-start lg:items-center gap-2 justify-between">
+                    <div class="flex gap-2 items-center">
+                        <span class="block w-1 h-10 bg-green-500"></span>
+                    <div>
+                        <p>№  00 00 00  от 17.04.21</p>
+                        <p class="font-bold text-black">Выполнен</p>
+                    </div>
+                    </div>
+                    <div>
+                        <p class="text-[#9D7B6D]">Рюкзак для ноутбука Case Logic VNB-217 17'' Black (3200980)</p>
+                        <p class="">состояние:	Новое, Пол:	Мужской, тип	Городской</p>
+                    </div>
+                    <div>
+                        <p>Сумма заказа</p>
+                        <b>	167.67 грн.</b>
+                    </div>
+                    <img src="./img/info deliv/question.svg" alt="">
+                    <img src="./img/info deliv/add-btn.svg" alt="">
+                </div>
+                <div class="hidden justify-center gap-3 min-[435px]:flex items- pt-5 animate__animated animate__bounceInRight wow">
+                    <p class="text-[#393939] font-medium">Назад</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">01</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">02</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">03</p>
+                    <p class="text-2xl font-bold text-black active">04</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">05</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">06</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">07</p>
+                    <p class="text-2xl font-bold text-[#2D2D2D99] hover:text-black hover:underline transition-all duration-300">08</p>
+                    <p class="text-[#393939] font-medium">Далее</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- редактировать профиль -->
+        <div class="w-full pr-10 animate__animated animate__fadeInUpBig hidden">
+            <div class="flex gap-3 items-center text-xl font-bold">
+                <span class="block w-1 h-8 bg-red-600"></span>
+                <h2>Редактировать профиль</h2>
+            </div>
+
+            <div class="bg-white rounded-md p-2 my-3 w-full">
+                <h2>Личные данные</h2> <hr>
+                <div class="flex justify-start w-auto flex-wrap lg:flex-nowrap items-center gap-10">
+                    <label for="" class="flex p-1 my-2 border-2 border-[#9D7B6D] rounded-lg flex-col">Имя <input type="text" class="border-none outline-none font-bold  block"></label>
+                    <label for="" class="flex p-1 my-2 border-2 border-[#9D7B6D] rounded-lg flex-col">Фамилия <input type="text" class="border-none outline-none font-bold  block"></label>
+                </div>
+                <div class="flex justify-start flex-wrap lg:flex-nowrap items-center gap-10">
+                    <label for="" class="flex p-1 my-2 border-2 border-[#9D7B6D] rounded-lg flex-col">Почта  <input type="email" class="border-none outline-none font-bold  block"></label>
+                    <label for="" class="flex p-1 my-2 border-2 border-[#9D7B6D] rounded-lg flex-col">Телефон <input type="tel" class="border-none outline-none font-bold  block"></label>
+                </div>
+                <div class="flex justify-between flex-wrap lg:flex-nowrap items-center gap-1 pr-1">
+                    <label for="" class="flex p-1 my-2 border-2 border-[#9D7B6D] rounded-lg flex-col">Пароль  <input type="password" class="border-none outline-none font-bold  block"></label>
+                    <label for="" class="flex p-1 my-2 border-2 border-[#9D7B6D] rounded-lg flex-col">Повторить пароль <input type="password" class="border-none outline-none font-bold  block"></label>
+                    <img src="./img/info deliv/btn-save.svg" class="hover:scale-90 duration-300 transition-all cursor-pointer">
+                </div>
+                <div class="flex justify-between pr-5 gap-1 flex-wrap sm:flex-nowrap">
+                    <label for="check" class="flex items-center gap-2 my-4">
+                        <input id="check" class="w-5 h-5" type="checkbox">
+                        <span>согласен с публичным договором предоставлния услуг</span>
+                    </label>
+                    <label for="checke" class="flex items-center gap-2 my-4">
+                        <input id="checke" class="w-5 h-5" type="checkbox">
+                        <span>согласен с публичным договором предоставлния услуг</span>
+                    </label>
+                </div>
+                <div>
+                    <h2 class="font-bold">Мессенджеры для связи</h2>
+                </div>
+                <div class="my-3 flex flex-wrap sm:flex-nowrap justify-between items-center">
+                    <div class="flex gap-3 text-base">
+                        <img src="./img/info deliv/mess1.svg" class="hover:scale-90 duration-300 transition-all cursor-pointer">
+                        <p class="font-bold">Viber</p>
+                    </div>
+                    <div class="flex gap-3 text-base items-center">
+                        <p >@Имя в сети</p>
+                        <img src="./img/main/vxod-exit.svg" class="hover:scale-90 duration-300 transition-all cursor-pointer">
+                    </div>
+                </div>
+                <div class="my-3 flex flex-wrap sm:flex-nowrap  justify-between items-center">
+                    <div class="flex gap-3 text-base">
+                        <img src="./img/info deliv/mess2.svg" class="hover:scale-90 duration-300 transition-all cursor-pointer">
+                        <p class="font-bold">Telegram</p>
+                    </div>
+                    <div class="flex gap-3 flex-wrap sm:flex-nowrap text-base items-center">
+                        <input type="text" class="py-3 outline-none bg-[#F2F2F2] px-2 rounded-lg" placeholder="Имя пользователя">
+                        <a href="#" class="text-cyan-400 underline">Отправить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden">
+            <div class="flex gap-2 items-center animate__animated animate__bounceInLeft wow">
+                <span class="w-1 h-7 block bg-red-600"></span>
+                <h2 class="text-2xl font-bold">Мои отзывы</h2>
+            </div>
+            <!-- card -->
+            <div class="flex items-start gap-3 flex-wrap lg:flex-nowrap ">
+                <div class="">
+                    <div class="py-7 px-5 box border-1 rounded-md bg-white my-6 animate__animated animate__bounceInUp wow">
+                        <div class="flex justify-start items-center gap-5 flex-wrap sm:flex-nowrap">
+                            <p>Feb 2, 2019 19:28</p>
+                            <p>Покупка в магазине: </p>
+                            <img src="./img/info deliv/card-img1.svg" alt="">
+                            <p class="font-bold">Amazon.com</p>
+                        </div>
+                        <div class="text-4xl my-3 text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
+                        <h1 class="text-xl my-4 font-bold">Организовали быструю доставку!</h1>
+                        <p class="text-md my-1">Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в </p>
+                        <div class="flex justify-start overflow-x-scroll gap-5 box">
+                            <img src="./img/info deliv/card-card1.svg" alt="">
+                            <img src="./img/info deliv/card-card2.svg" alt="">
+                            <img src="./img/info deliv/card-card3.svg" alt="">
+                            <img src="./img/info deliv/card-card3.svg" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="py-7 px-5 border-1 box rounded-md bg-white my-6 animate__animated animate__bounceInUp wow">
+                        <div class="flex justify-start flex-wrap sm:flex-nowrap items-center gap-5">
+                            <p>Feb 2, 2019 19:28</p>
+                            <p>Покупка в магазине: </p>
+                            <img src="./img/info deliv/card-img1.svg" alt="">
+                            <p class="font-bold">Amazon.com</p>
+                        </div>
+                        <div class="text-4xl my-3 text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
+                        <h1 class="text-xl my-4 font-bold">Организовали быструю доставку!</h1>
+                        <p class="text-md my-1">Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в </p>
+                        <div class="flex justify-start box overflow-x-scroll gap-5">
+                            <img src="./img/info deliv/card-card1.svg" alt="">
+                            <img src="./img/info deliv/card-card2.svg" alt="">
+                            <img src="./img/info deliv/card-card3.svg" alt="">
+                            <img src="./img/info deliv/card-card3.svg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="py-7 px-5 box border-1 rounded-md bg-white my-6 animate__animated animate__bounceInUp wow">
+                        <div class="flex justify-start flex-wrap sm:flex-nowrap items-center gap-5">
+                            <p>Feb 2, 2019 19:28</p>
+                            <p>Покупка в магазине: </p>
+                            <img src="./img/info deliv/card-img1.svg" alt="">
+                            <p class="font-bold">Amazon.com</p>
+                        </div>
+                        <div class="text-4xl my-3 text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
+                        <h1 class="text-xl my-4 font-bold">Организовали быструю доставку!</h1>
+                        <p class="text-md my-1">Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в </p>
+                        <div class="flex box justify-start overflow-x-scroll gap-5">
+                            <img src="./img/info deliv/card-card1.svg" alt="">
+                            <img src="./img/info deliv/card-card2.svg" alt="">
+                            <img src="./img/info deliv/card-card3.svg" alt="">
+                            <img src="./img/info deliv/card-card3.svg" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="block w-full lg:w-40 animate__animated animate__bounceInRight">
+                    <h2 class="font-bold">Оставить отзыв</h2>
+                    <form class="bg-white pb-6 text-[#2D2D2D99] flex flex-col gap-3 py-3 px-2">
+                        <input type="text" placeholder="Ваше имя " class="bg-[#F2F2F2] rounded-sm px-1 text-white border-none">
+                        <input type="email" placeholder="Ваше почта " class="bg-[#F2F2F2] rounded-sm px-1 text-white border-none">
+                        <input type="text" placeholder="Ваше отзыв" class="bg-[#F2F2F2] pb-20 rounded-sm px-1 text-white border-none">
+                        <select name="select" id="" class="font-medium bg-[#F2F2F2] py-2 px-1 text-sm">
+                            <option value="">Выбирете магазин</option>
+                        </select>
+                        <div class="flex items-start flex-wrap"><p class="text-base">Ваша оценка </p> <p class="text-3xl text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9734; </p></div>
+                        <input class="block w-full mb-1 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="small_size" type="file">
+                        <button class="text-white border border-white hover:bg-white hover:text-red-500 hover:border-red-500 transition-all duration-300r bg-red-600 py-2 px-4 rounded-lg">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- footer -->
+    <div class="footer animate__animated animate__bounceInDown wow">
+        <div class="f1 animate__animated animate__backInLeft">
+          <img
+            src="img/main/footer-logo.svg"
+            alt=""
+            style="margin-bottom: 10px"
+          />
+          <p>Copyright © 2022 Poland24.com.ua. Все права защищены.</p>
+        </div>
+        <div class="f2 animate__animated animate__backInLeft">
+          <h3>Навигация</h3>
+          <div class="f2-child">
+            <div>
+              <p>О компании</p>
+              <p>Доставка из магазинов Европы</p>
+              <p>Список магазинов</p>
+              <p>Отзывы</p>
+            </div>
+            <div>
+              <p>FAQ</p>
+              <p>Товар на складе в Украине</p>
+              <p>Правили магазина</p>
+            </div>
+          </div>
+        </div>
+        <div class="f3 animate__animated animate__backInRight">
+          <p>Мы в соц.сетяц:</p>
+          <div class="flex gap-3">
+            <a href="#" class="hover:scale-105"
+              ><img src="./img/main/foot1.svg" alt=""
+            /></a>
+            <a href="#" class="hover:scale-105"
+              ><img src="./img/main/foot2.svg" alt=""
+            /></a>
+            <a href="#" class="hover:scale-105"
+              ><img src="./img/main/foot3.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="f4 animate__animated animate__backInRight">
+          <h3>Контакты</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Украина, Жовква, ул.
+            Набержная, 1
+          </p>
+          <p><i class="fa-solid fa-timer"></i> Время работы с 10:00 до 19:00</p>
+          <p><i class="fa-sharp fa-solid fa-phone"></i> +38 (093) 496 58 00</p>
+          <p><i class="fa-solid fa-envelope"></i> poland24.com.ua</p>
+        </div>
+      </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="./wow.min.js"4></script>
+<script>
+    new WOW().init();
+    </script> 
+</html>

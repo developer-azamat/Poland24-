@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hhhh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/magazine-sec.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar-top">
+            <div class="logo">
+                <img src="./img/main/logo.svg" alt="">
+            </div>
+            <div class="messengers">
+                <div class="center-msg">
+                    <span>Наши мессенджеры</span>
+                    <a href="#"><img src="./img/main/navbar-icon1.svg" alt=""></a>
+                    <a href="#"><img src="./img/main/navbar-icon2.svg" alt=""></a>
+                </div>
+                <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+            </div>
+            <div class="sum">
+                <p><b>'zł&nbsp;</b>00,00</p>
+                <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00 </p>
+            </div>
+            <button class="btn zakaz">Оформить заказ</button>
+            <div><h3 class="point">Вход /Регистрация</h3></div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <img src="./img/main/navbar-icon3.svg" alt="">
+                <select name="" id="country">
+                    <option value="UKR">UKR</option>
+                    <option value="BRT">BRT</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <li><a href="#">О компании </a></li>
+            <li><a href="#">Список магазину</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Вопрос -ответ</a></li>
+            <li><a href="#">Калькулятор </a></li>
+            <li><a href="#">Контакты </a></li>
+            <li><a href="#"><button class="pomosh"><i class="fa-solid fa-question"></i> Помощь в поиске товаров </button></a></li>
+        </div>
+    </div>
+
+    <div class="header pt-[150px] sm:pl-[100px] pl-10 pr-[60px] pb-10 bg-[#D2D2D2]">
+        <p class="text-base inline-block">Главная</p> &nbsp;<i class="fa-solid fa-chevron-right"></i>
+        <h3 class="text-base font-bold inline-block">Вопрос-ответ</h3>
+        <div class="flex items-center py-6 justify-start gap-3"><span class="w-1 h-7 bg-[#EA0C0C] block"></span>
+        <h3 class="text-3xl font-bold">Вопрос-ответ</h3></div>
+        <div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Все ли товары можно доставить под минимальную комиссию?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div>
+        <div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"><p class="font-bold text-0xl">Почему доставляем под 0%? В чем наш интерес?</p><i class="fa-solid fa-minus"></i></div>
+        <!-- plus minus -->
+        <p class="ml-5 py-3">Мы не устанавливаем формальных ограничений в нашей работе, создать свой Персональный финансовый план с помощью наших консультантов и получить рекомендации по его реализации может практически каждый. Однако, мы считаем, что, в принципе, стоит работать с Независимым финансовым советником только при достижении определенного материального благополучия - только тогда Вы получите максимальную пользу от сотрудничества. Мы рекомендуем обращаться к финансовому советнику, если:
+        <li class="ml-5">
+            •	Ваш персональный доход превышает 3 000 долларов США или эквивалента в другой валюте, доход семьи превышает 5 000 долларов США или эквивалента в другой валюте.
+        </li>
+           <li class="ml-5"> •	Ваши ежемесячные доходы превышают ежемесячные расходы на 1000 долларов США или больше.</li>
+        <li class="ml-5">•	Сумма Ваших активов превышает 50 000 долларов США или эквивалента в другой валюте.</li>    
+        </p>
+        <!--  -->
+        <div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Какими транспортными компаниями осуществляется доставка заказов по Украине?
+        </p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div>
+        <div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Какие сроки поставки с момента совершения заказа?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Заказ и оплата бу товаров</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Можно ли использовать адрес нашего склада в Польше для совершения закупок в интернет-магазинах Польши, Европы, доставки с аукциона Ebay? Какая будет комиссия? Как узнать физический адрес склада?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div>
+        <div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 gap-5 justify-between"><p class="font-bold text-0xl">Можно ли внести изменения в сделанный заказ?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all "></i></div><div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Можно ли отменить оформленный(предоплаченный) заказ?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Каким образом я могу внести коррективы или дополнения в адресные данные?
+        </p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex items-center hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 py-3 justify-between"><p class="font-bold text-0xl">Могу ли я вернуть заказанный товар?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Существует ли возможность получения скидки в случае покупки большого количества товаров?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex items-center hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 py-3 justify-between"><p class="font-bold text-0xl">Существует ли возможность замены товара без денежных расчетов?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div><div class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center py-3 justify-between"><p class="font-bold text-0xl">Каков режим работы Центра Обслуживания Клиентов?</p><i class="fa-solid fa-plus animate-bounce hover:text-red-700 hover:transform-cpu cursor-pointer duration-300 transition-all"></i></div>
+        
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="f1">
+            <img src="img/main/footer-logo.svg" alt="" style="margin-bottom: 10px;">
+            <p>Copyright © 2022  Poland24.com.ua. Все права защищены.</p>
+        </div>
+        <div class="f2">
+            <h3>Навигация</h3>
+            <div class="f2-child">
+                <div>
+                    <p>О компании</p>
+                    <p>Доставка из магазинов Европы</p>
+                    <p>Список магазинов</p>
+                    <p>Отзывы</p>
+                </div>
+                <div>
+                    <p>FAQ</p>
+                    <p>Товар на складе в Украине</p>
+                    <p>Правили магазина</p>
+                </div>
+            </div>
+        </div>
+        <div class="f3">
+            <p>Мы в соц.сетяц:</p>
+            <div class=" flex gap-3">
+                <a href="#" class="hover:scale-105"><img src="./img/main/foot1.svg" alt=""></a>
+                <a href="#" class="hover:scale-105"><img src="./img/main/foot2.svg" alt=""></a>
+                <a href="#" class="hover:scale-105"><img src="./img/main/foot3.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="f4">
+            <h3>Контакты</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Украина, Жовква, ул. Набержная, 1</p>
+            <p><i class="fa-solid fa-timer"></i> Время работы с 10:00 до 19:00</p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> +38 (093) 496 58 00  </p>
+            <p><i class="fa-solid fa-envelope"></i> poland24.com.ua</p>
+        </div>
+        </div>
+</body>
+</html>
