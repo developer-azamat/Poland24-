@@ -68,19 +68,19 @@
                     <p class="text-gray-600">lawson@example.com</p>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="zakazi">
                 <img src="./img/info deliv for admin/user1.svg" alt="">
                 <div>
-                    <h2 class="font-bold">Мои заказы</h2>
+                    <h2 class="font-bold" >Мои заказы</h2>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="otziv">
                 <img src="./img/info deliv for admin/user2.svg" alt="">
                 <div>
                     <h2 class="font-bold">Мои отзывы</h2>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="perepiska">
                 <img src="./img/info deliv for admin/user3.svg" alt="">
                 <div>
                     <h2 class="font-bold">Моя переписка</h2>
@@ -90,7 +90,7 @@
         <!-- fa-chevron-right -->
 
         <!-- Моя переписка -->
-        <div class="w-[180%] pr-5 hidden">
+        <div class="w-[180%] pr-5 hidden perepiska">
             <div class="flex justify-between flex-wrap lg:flex-nowrap gap-10 items-center animate__animated animate__backInUp">
                 <div class="flex gap-1">
                     <span class="block w-1 h-7 bg-red-500"></span>
@@ -214,7 +214,7 @@
 
 
         <!-- Мои заказы -->
-        <div class="pr-10 hidden">
+        <div class="pr-10 hidden zakazi ">
             <div class="flex gap-3 items-center text-xl font-bold">
                 <span class="block w-1 h-8 bg-red-600"></span>
                 <h2>Мои заказы</h2>
@@ -482,7 +482,7 @@
             </div>
         </div>
 
-        <div class="hidden">
+        <div class="otziv hidden">
             <div class="flex gap-2 items-center animate__animated animate__bounceInLeft wow">
                 <span class="w-1 h-7 block bg-red-600"></span>
                 <h2 class="text-2xl font-bold">Мои отзывы</h2>
@@ -617,11 +617,12 @@
           <p><i class="fa-solid fa-envelope"></i> poland24.com.ua</p>
         </div>
       </div>
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <script src="./js/info-del.js"></script>
 <script src="./wow.min.js"4></script>
 <script>
     new WOW().init();

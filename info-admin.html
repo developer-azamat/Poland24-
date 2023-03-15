@@ -56,10 +56,10 @@
     <header class="pt-[200px] min-[1080px]:pt-[150px] min-[1090px]:flex-nowrap flex-wrap  min-[680px]:pl-[75px] pl-6  bg-[#D2D2D2] flex gap-5 pb-[30px] ">
 
         <!-- Добавить заказ -->
-        <div class="fixed hidden overflow-y-scroll top-[50%] left-[50%] bg-white translate-x-[-50%] translate-y-[-50%] w-[100%] px-10 py-5 z-[99999] h-[100vh]">
+        <div class="fixed transition-all duration-700  overflow-y-scroll top-[-250%] left-[50%] bg-white translate-x-[-50%] translate-y-[-50%] w-[100%] px-10 py-5 z-[99999] h-[100vh] corzinka">
             <div class="flex justify-between items-center text-2xl font-bold">
                 <h1 class="p-1 bg-cyan-500 rounded-md text-white">Добавить заказ</h1>
-                <img src="./img/main/vxod-exit.svg" class="hover:scale-75 hover:opacity-75 cursor-pointer active:cursor-progress transition-transform">
+                <img src="./img/main/vxod-exit.svg" class="hover:scale-75 hover:opacity-75 cursor-pointer active:cursor-progress transition-transform exit-corzinka">
             </div>
             <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
                 <div class="col-span-2">
@@ -156,7 +156,7 @@
                         
                     </div>
                     <div class="flex my-3 justify-center items-center ">
-                        <button class="py-2 px-4 bg-red-600 text-white rounded-lg animate-bounce hover:animate-none duration-300 transition-transform">Отправить</button>
+                        <button class="py-2 px-4 bg-red-600 text-white rounded-lg animate-bounce hover:animate-none duration-300 transition-transform" id="spssBtn">Отправить</button>
                     </div>
             </div>
         </div>
@@ -171,38 +171,38 @@
                     <p class="text-gray-600">lawson@example.com</p>
                 </div>
             </div>
-            <div class="flex gap-3 items-center bg-[#D2D2D2] py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center bg-[#D2D2D2] py-1  px-1 cursor-pointer" id="zakazi">
                 <img src="./img/info deliv for admin/user1.svg" alt="">
                 <div>
                     <h2 class="font-bold">Мои заказы</h2>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="perepiska">
                 <img src="./img/info deliv for admin/user2.svg" alt="">
-                <div>
-                    <h2 class="font-bold">Мои отзывы</h2>
-                </div>
-            </div>
-            
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
-                <img src="./img/info deliv for admin/user3.svg" alt="">
                 <div>
                     <h2 class="font-bold">Моя переписка</h2>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="requists">
+                <img src="./img/info deliv for admin/user3.svg" alt="">
+                <div>
+                    <h2 class="font-bold">Запросы</h2>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="generation">
                 <img src="./img/info deliv for admin/user4.svg" alt="">
                 <div>
                     <h2 class="font-bold">PayU</h2>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="balance">
                 <img src="./img/info deliv for admin/user5.svg" alt="">
                 <div>
-                    <h2 class="font-bold">PayU</h2>
+                    <h2 class="font-bold">Общий баланс</h2>
                 </div>
             </div>
-            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer">
+            <div class="flex gap-3 items-center duration-500 transition-colors hover:bg-[#D2D2D2] hover:border-transparent bg-white border-2 py-1  px-1 cursor-pointer" id="clients">
                 <img src="./img/info deliv for admin/user6.svg" alt="">
                 <div>
                     <h2 class="font-bold">Клиенты</h2>
@@ -210,7 +210,7 @@
             </div>
         </div>
         <!-- Общий баланс -->
-        <div class="my-2 w-full min-[449px]:pr-[75px] pr-0" data-aos="zoom-out-left">
+        <div class="my-2 w-full min-[449px]:pr-[75px] pr-0 hidden balance" data-aos="zoom-out-left">
             <div class="flex items-center gap-3 ">
                 <span class="block w-[5px] h-10 bg-red-600"></span>
                 <h2 class="text-2xl font-bold text-[#2D2D2D]">Общий баланс</h2>
@@ -302,7 +302,7 @@
             </div>
             </div>
         <!-- klienti for admin -->
-        <div class="sm:w-full w-auto lg:px-3 md:px-2 px-0 hidden">
+        <div class="sm:w-full w-auto lg:px-3 md:px-2 px-0 hidden clients">
             <div class="flex justify-between gap-10 sm:flex-nowrap flex-wrap items-center">
                 <div class="flex gap-2">
                     <span class="block w-1 h-7 bg-red-500"></span>
@@ -439,7 +439,7 @@
     </div>
 
         <!-- моя переписка -->
-        <div class="w-[180%] pr-5 hidden" data-aos="flip-left"
+        <div class="w-[180%] pr-5 hidden perepiska" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000">
             <div class="flex justify-between flex-wrap lg:flex-nowrap gap-10 items-center">
@@ -565,7 +565,7 @@
 
 
         <!-- redaktirovat profil dlya admina -->
-        <div class="w-full pr-10 hidden" data-aos="zoom-out-right">
+        <div class="w-full pr-10 hidden profil_admin" data-aos="zoom-out-right">
             <div class="flex gap-3 items-center text-xl font-bold">
                 <span class="block w-1 h-8 bg-red-600"></span>
                 <h2>Редактировать профиль</h2>
@@ -623,7 +623,7 @@
         </div>
 
         <!-- PayU -->
-        <div class="hidden">
+        <div class="hidden generation animate__animated animate__bounceInLeft">
 
             <div class="flex gap-2">
                 <span class="block w-1 h-7 bg-red-500"></span>
@@ -652,7 +652,7 @@
 
         <!-- Моя переписка -->
         
-            <div class="w-full px-3 hidden">
+            <div class="w-full px-3 hidden requists">
                 <div class="flex justify-between gap-10 items-center flex-wrap sm:flex-nowrap">
                     <div class="flex gap-2">
                         <span class="block w-1 h-7 bg-red-500"></span>
@@ -764,11 +764,11 @@
 
 
         <!-- lk dlya admina -->
-        <div class="w-full px-3 2xl:pr-44 hidden">
+        <div class="w-full px-3 2xl:pr-44 zakazi" >
             <div class="flex justify-between gap-10 items-center flex-wrap min-[380px]:flex-nowrap">
                 <div class="flex gap-2">
                     <span class="block w-1 h-7 bg-red-500"></span>
-                    <h2 class="text-xl font-bold">Запросы</h2>
+                    <h2 class="text-xl font-bold">Заказы</h2>
                 </div>
                 
                 <select name="" id="" class="rounded-md outline-none font-semibold py-2 px-4">
@@ -953,4 +953,5 @@
 <script>
   AOS.init();
 </script>
+<script src="./js/info-admin.js"></script>
 </html>

@@ -237,5 +237,6 @@ select:optional{
 .box:hover .box::-webkit-scrollbar-thumb{
     background: #f4f3f4;
 }
-  
-
+.fa-solid{
+    cursor: pointer;
+}
