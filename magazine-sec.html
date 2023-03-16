@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Amazon</title>
     <link rel="stylesheet" href="./css/magazine-sec.css" />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,17 +12,18 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="navbar">
-      <div class="navbar-top">
+      <div class="navbar-top animate__animated animate__fadeInLeft">
         <div class="logo">
-          <img src="./img/main/logo.svg" alt="" />
+          <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
         </div>
         <div class="messengers">
           <div class="center-msg">
@@ -47,15 +48,15 @@
           </select>
         </div>
       </div>
-      <div class="navbar-bottom">
-        <li><a href="#">О компании </a></li>
-        <li><a href="#">Список магазину</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Вопрос -ответ</a></li>
-        <li><a href="#">Калькулятор </a></li>
-        <li><a href="#">Контакты </a></li>
+      <div class="navbar-bottom animate__animated animate__fadeInLeft">
+        <li><a href="./zapros.html">О компании </a></li>
+        <li><a href="magazine.html">Список магазину</a></li>
+        <li><a href="zapros.html">Отзывы</a></li>
+        <li><a href="ans-ques.html">Вопрос -ответ</a></li>
+        <li><a href="index.html">Калькулятор </a></li>
+        <li><a href="#footer">Контакты </a></li>
         <li>
-          <a href="#"
+          <a href="delivery.html"
             ><button class="pomosh">
               <i class="fa-solid fa-question"></i> Помощь в поиске товаров
             </button></a
@@ -68,7 +69,7 @@
     <header data-aos="fade-down"
     data-aos-easing="linear"
     data-aos-duration="1500"
-      class="overflow-hidden sm:pt-[150px] pt-[90px] sm:px-[100px] px-10 pb-[100px] bg-[#D2D2D2]"
+      class="overflow-hidden wow animate__animated animate__fadeInUp sm:pt-[150px] pt-[90px] sm:px-[100px] px-10 pb-[100px] bg-[#D2D2D2]"
     >
       <p class="text-base inline-block">Главная</p>
       &nbsp;<i class="fa-solid fa-chevron-right"></i>
@@ -216,9 +217,7 @@
             </p>
           </div>
         </div>
-        <div class="flex py-5 gap-5" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+        <div class="flex py-5 gap-5 animate__animated animate__slideInDown">
           <div class="flex flex-col items-center gap-3">
             <div
               class="w-[40px] h-[40px] text-white flex items-center justify-center p-2 rounded-full text-2xl bg-red-600"
@@ -410,7 +409,7 @@
         </div>
               
        <div class="flex scrollbar overflow-scroll w-[100%] justify-start gap-10">
-                <div data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000" class="py-3 box px-5 border-1 rounded-md bg-white my-6">
+                <div class="py-3 animate__animated animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6">
                     <div class="flex md:justify-between flex-wrap gap-2 md:flex-nowrap items-center">
                         <p class="font-semibold">Экономов Павел</p>
                         <p class="text-gray-600">Feb 2, 2019 19:28</p>
@@ -429,7 +428,7 @@
                         <img src="./img/info deliv/card-card2.svg" alt="">
                     </div>
                 </div>
-                <div  data-aos-duration="2000"     data-aos-easing="ease-out-cubic" data-aos="flip-left" class="py-3 box px-5 border-1 rounded-md bg-white my-6">
+                <div  class="py-3 animate__animated animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6 ">
                     <div class="flex md:justify-between flex-wrap gap-2 md:flex-nowrap items-center">
                         <p class="font-semibold">Экономов Павел</p>
                         <p class="text-gray-600">Feb 2, 2019 19:28</p>
@@ -448,7 +447,7 @@
                         <img src="./img/info deliv/card-card2.svg" alt="">
                     </div>
                 </div>
-                <div data-aos-duration="2000" data-aos="flip-left" class="py-3 box px-5 border-1 rounded-md bg-white my-6">
+                <div class="py-3 animate__animated animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6">
                     <div class="flex md:justify-between flex-wrap gap-2 md:flex-nowrap items-center">
                         <p class="font-semibold">Экономов Павел</p>
                         <p class="text-gray-600">Feb 2, 2019 19:28</p>
@@ -472,7 +471,7 @@
     </div>
     </header>
     <!-- footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="f1">
         <img
           src="./img/main/footer-logo.svg"
@@ -526,5 +525,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script src="./wow.min.js"></script>
+  <script>
+    new WOW().init();
   </script>
 </html>

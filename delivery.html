@@ -1,164 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery</title>
-    <link rel="stylesheet" href="./css/magazine-sec.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Запрос</title>
+    <link rel="stylesheet" href="./css/magazine-sec.css" />
     <!-- tailwinf=d css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="navbar">
-        <div class="navbar-top">
-            <div class="logo">
-                <img src="./img/main/logo.svg" alt="">
-            </div>
-            <div class="messengers">
-                <div class="center-msg">
-                    <span>Наши мессенджеры</span>
-                    <a href="#"><img src="./img/main/navbar-icon1.svg" alt=""></a>
-                    <a href="#"><img src="./img/main/navbar-icon2.svg" alt=""></a>
-                </div>
-                <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
-            </div>
-            <div class="sum">
-                <p><b>'zł&nbsp;</b>00,00</p>
-                <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00 </p>
-            </div>
-            <button class="btn zakaz">Оформить заказ</button>
-            <div><h3 class="point font-bold">Вход /Регистрация</h3></div>
-            <div style="display: flex; align-items: center; gap: 10px;">
-                <img src="./img/main/navbar-icon3.svg" alt="">
-                <select name="" id="country">
-                    <option value="UKR">UKR</option>
-                    <option value="BRT">BRT</option>
-                    <option value="USA">USA</option>
-                </select>
-            </div>
+      <div class="navbar-top">
+        <div class="logo">
+            <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
         </div>
-        <div class="navbar-bottom">
-            <li><a href="#">О компании </a></li>
-            <li><a href="#">Список магазину</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Вопрос -ответ</a></li>
-            <li><a href="#">Калькулятор </a></li>
-            <li><a href="#">Контакты </a></li>
-            <li><a href="#"><button class="pomosh"><i class="fa-solid fa-question"></i> Помощь в поиске товаров </button></a></li>
+        <div class="messengers">
+          <div class="center-msg">
+            <span>Наши мессенджеры</span>
+            <a href="#"><img src="./img/main/navbar-icon1.svg" alt="" /></a>
+            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" /></a>
+          </div>
+          <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
         </div>
+        <div class="sum">
+          <p><b>'zł&nbsp;</b>00,00</p>
+          <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
+        </div>
+        <button class="btn zakaz">Оформить заказ</button>
+        <div><h3 class="point font-bold">Вход /Регистрация</h3></div>
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img src="./img/main/navbar-icon3.svg" alt="" />
+          <select name="" id="country">
+            <option value="UKR">UKR</option>
+            <option value="BRT">BRT</option>
+            <option value="USA">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="navbar-bottom">
+        <li><a href="./zapros.html">О компании </a></li>
+        <li><a href="magazine.html">Список магазину</a></li>
+        <li><a href="zapros.html">Отзывы</a></li>
+        <li><a href="ans-ques.html">Вопрос -ответ</a></li>
+        <li><a href="index.html">Калькулятор </a></li>
+        <li><a href="#footer">Контакты </a></li>
+        <li>
+          <a href="#"
+            ><button class="pomosh">
+              <i class="fa-solid fa-question"></i> Помощь в поиске товаров
+            </button></a
+          >
+        </li>
+      </div>
     </div>
 
     <!-- header -->
-    <header class="pt-[150px] md:pl-[100px] pl-[50px] bg-[#D2D2D2] pr-[20px] md:pr-[70px] pb-[30px]">
-            <div>
-                <p class="text-base inline-block">Главная</p> &nbsp;<i class="fa-solid fa-chevron-right"></i>
-                 <span class="font-bold">Запрос</span>
+    <header
+      class="pt-[150px] md:pl-[100px] pl-[50px] bg-[#D2D2D2] pr-[20px] md:pr-[70px] pb-[30px]"
+    >
+      <div>
+        <p class="text-base inline-block">Главная</p>
+        &nbsp;<i class="fa-solid fa-chevron-right"></i>
+        <span class="font-bold">Запрос</span>
+      </div>
+      <div class="grid md:grid-cols-2 items-center my-5">
+        <div data-aos="fade-up-left">
+          <div
+            class="flex gap-2 items-center p-2 rounded hover:bg-red-600 hover:text-white duration-500 transition-all"
+          >
+            <span class="w-2 h-16 block bg-red-600"></span>
+            <h2 class="font-bold text-lg">
+              Можете оформить запрос и в кратчайшие сроки постараемся найти
+              необходимы товар в странах Евросоюза.
+            </h2>
+          </div>
+          <p class="my-10 text-lg text-[#2D2D2DE5]">
+            Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот,
+            несмотря на название, не имеет никакого отношения к обитателям
+            водоемов. Используется он веб-дизайнерами для вставки на
+            интернет-страницы и демонстрации внешнего вида контента, просмотра
+            шрифтов, абзацев, отступов и т.д.
+          </p>
+        </div>
+        <div>
+          <img
+            src="./img/zapros/z1.svg"
+            alt=""
+            class="hover:shadow-white cursor-pointer hover:shadow-inner"
+            data-aos="fade-up-right"
+          />
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-2 text-sm text-[#2D2D2D] bg-white px-5 py-2"
+        data-aos="flip-left"
+      >
+        <div class="col-span-3 sm:col-span-2">
+          <p class="font-medium text-sm">Товар 1</p>
+          <input
+            type="text"
+            placeholder="Apple iPhone XR 64GB 4G LTE T-Mobile AT&T Verizon"
+            class="bg-[#F2F2F2] placeholder:text-black w-full rounded-lg px-3 py-2 outline-none"
+          />
+        </div>
+        <div
+          class="col-span-3 sm:col-span-1 items-center flex gap-2 justify-between"
+        >
+          <div class="w-full">
+            <p class="font-medium text-sm">Комментарий</p>
+            <input
+              type="text"
+              class="bg-[#F2F2F2] placeholder:text-black w-full rounded-lg px-3 py-2 outline-none"
+              placeholder="Fully Tested and Functional Device in Very Good Condition and ready for resale. The device is in"
+            />
+          </div>
+          <img
+            src="./img/main/minusbtn.svg"
+            alt=""
+            class="hover:animate-spin duration-150 cursor-cell"
+          />
+        </div>
+        <div class="col-span-3">
+          <p class="my-1">Прикреплено фото:</p>
+          <div class="flex gap-2">
+            <div class="flex gap-2 items-center bg-gray-200 rounded-xl px-1">
+              <img src="./img/zapros/thumbnail.svg" alt="" />
+              <p>Фото 1</p>
+              <i class="fa-solid fa-xmark"></i>
             </div>
-            <div class="grid md:grid-cols-2 items-center my-5">
-                <div data-aos="fade-up-left">
-                    <div class="flex gap-2 items-center p-2 rounded hover:bg-red-600 hover:text-white duration-500 transition-all">
-                        <span class="w-2 h-16 block bg-red-600"></span>
-                        <h2 class="font-bold text-lg">Можете оформить запрос и в кратчайшие сроки постараемся найти необходимы товар в странах Евросоюза.</h2>
-                    </div>
-                    <p class="my-10 text-lg text-[#2D2D2DE5]">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. </p>
-                </div>
-                <div>
-                    <img src="./img/zapros/z1.svg" alt="" class=" hover:shadow-white cursor-pointer hover:shadow-inner" data-aos="fade-up-right">
-                </div>
+            <div class="flex gap-2 items-center bg-gray-200 rounded-xl px-1">
+              <img src="./img/zapros/thumbnail.svg" alt="" />
+              <p>Фото 1</p>
+              <i class="fa-solid fa-xmark"></i>
             </div>
-            <div class="grid grid-cols-1 gap-2 text-sm text-[#2D2D2D] bg-white px-5 py-2" data-aos="flip-left">
-                <div class="col-span-3 sm:col-span-2">
-                    <p class="font-medium text-sm">Товар 1</p>
-                    <input type="text" placeholder="Apple iPhone XR 64GB 4G LTE T-Mobile AT&T Verizon" class="bg-[#F2F2F2] placeholder:text-black w-full rounded-lg px-3 py-2 outline-none">
-                </div>
-                <div class="col-span-3 sm:col-span-1 items-center flex gap-2 justify-between">
-                    <div class="w-full">
-                        <p class="font-medium text-sm">Комментарий</p>
-                        <input type="text" class="bg-[#F2F2F2] placeholder:text-black w-full rounded-lg px-3 py-2 outline-none" placeholder="Fully Tested and Functional Device in Very Good Condition and ready for resale. The device is in">
-                    </div>
-                    <img src="./img/main/minusbtn.svg" alt="" class="hover:animate-spin duration-150 cursor-cell">
-                </div>
-                <div class="col-span-3 ">
-                    <p class="my-1">Прикреплено фото:</p>
-                    <div class="flex gap-2">
-                        <div class="flex gap-2 items-center bg-gray-200 rounded-xl px-1">
-                            <img src="./img/zapros/thumbnail.svg" alt="">
-                            <p>Фото 1</p>
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="flex gap-2 items-center bg-gray-200 rounded-xl px-1">
-                            <img src="./img/zapros/thumbnail.svg" alt="">
-                            <p>Фото 1</p>
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-3 sm:col-span-2 items-end gap-2 flex justify-between">
-                    <div class="w-full">
-                        <p class="font-medium text-sm">Товар 1</p>
-                        <input type="text" placeholder="Apple iPhone XR 64GB 4G LTE T-Mobile AT&T Verizon" class="bg-[#F2F2F2] placeholder:text-black w-full rounded-lg px-3 py-2 outline-none">
-                    </div>
-                    <img src="./img/zapros/add-file.svg" alt="">
-                </div>
-                <div class="col-span-3 sm:col-span-1 items-center flex justify-between">
-                    <div class="w-full">
-                        <p class="font-medium text-sm">Комментарий</p>
-                        <input type="text" class="bg-[#F2F2F2] placeholder:text-black w-11/12 rounded-lg px-3 py-2 outline-none" >
-                    </div>
-                    <img src="./img/main/plusbtn.svg" alt="" class="hover:animate-spin duration-150 cursor-cell">
-                </div>
-                <div class="flex col-span-3 my-3 justify-center items-center ">
-                    <button class="py-2 px-4 bg-red-600 text-white rounded-lg duration-200 hover:animate-none animate-bounce hover:p-2 transition-all hover:bg-red-400">Отправить</button>
-                </div>
-                
-            </div>
-
+          </div>
+        </div>
+        <div
+          class="col-span-3 sm:col-span-2 items-end gap-2 flex justify-between"
+        >
+          <div class="w-full">
+            <p class="font-medium text-sm">Товар 1</p>
+            <input
+              type="text"
+              placeholder="Apple iPhone XR 64GB 4G LTE T-Mobile AT&T Verizon"
+              class="bg-[#F2F2F2] placeholder:text-black w-full rounded-lg px-3 py-2 outline-none"
+            />
+          </div>
+          <img src="./img/zapros/add-file.svg" alt="" />
+        </div>
+        <div class="col-span-3 sm:col-span-1 items-center flex justify-between">
+          <div class="w-full">
+            <p class="font-medium text-sm">Комментарий</p>
+            <input
+              type="text"
+              class="bg-[#F2F2F2] placeholder:text-black w-11/12 rounded-lg px-3 py-2 outline-none"
+            />
+          </div>
+          <img
+            src="./img/main/plusbtn.svg"
+            alt=""
+            class="hover:animate-spin duration-150 cursor-cell"
+          />
+        </div>
+        <div class="flex col-span-3 my-3 justify-center items-center">
+          <button
+            class="py-2 px-4 bg-red-600 text-white rounded-lg duration-200 hover:animate-none animate-bounce hover:p-2 transition-all hover:bg-red-400"
+          >
+            Отправить
+          </button>
+        </div>
+      </div>
     </header>
     <!-- footer -->
-    <div class="footer">
-        <div class="f1">
-            <img src="img/main/footer-logo.svg" alt="" style="margin-bottom: 10px;">
-            <p>Copyright © 2022  Poland24.com.ua. Все права защищены.</p>
+    <div class="footer" id="footer">
+      <div class="f1">
+        <img
+          src="img/main/footer-logo.svg"
+          alt=""
+          style="margin-bottom: 10px"
+        />
+        <p>Copyright © 2022 Poland24.com.ua. Все права защищены.</p>
+      </div>
+      <div class="f2">
+        <h3>Навигация</h3>
+        <div class="f2-child">
+          <div>
+            <p>О компании</p>
+            <p>Доставка из магазинов Европы</p>
+            <p>Список магазинов</p>
+            <p>Отзывы</p>
+          </div>
+          <div>
+            <p>FAQ</p>
+            <p>Товар на складе в Украине</p>
+            <p>Правили магазина</p>
+          </div>
         </div>
-        <div class="f2">
-            <h3>Навигация</h3>
-            <div class="f2-child">
-                <div>
-                    <p>О компании</p>
-                    <p>Доставка из магазинов Европы</p>
-                    <p>Список магазинов</p>
-                    <p>Отзывы</p>
-                </div>
-                <div>
-                    <p>FAQ</p>
-                    <p>Товар на складе в Украине</p>
-                    <p>Правили магазина</p>
-                </div>
-            </div>
+      </div>
+      <div class="f3">
+        <p>Мы в соц.сетяц:</p>
+        <div class="flex gap-3">
+          <a href="#" class="hover:scale-105"
+            ><img src="./img/main/foot1.svg" alt=""
+          /></a>
+          <a href="#" class="hover:scale-105"
+            ><img src="./img/main/foot2.svg" alt=""
+          /></a>
+          <a href="#" class="hover:scale-105"
+            ><img src="./img/main/foot3.svg" alt=""
+          /></a>
         </div>
-        <div class="f3">
-            <p>Мы в соц.сетяц:</p>
-            <div class=" flex gap-3">
-                <a href="#" class="hover:scale-105"><img src="./img/main/foot1.svg" alt=""></a>
-                <a href="#" class="hover:scale-105"><img src="./img/main/foot2.svg" alt=""></a>
-                <a href="#" class="hover:scale-105"><img src="./img/main/foot3.svg" alt=""></a>
-            </div>
-        </div>
-        <div class="f4">
-            <h3>Контакты</h3>
-            <p><i class="fa-solid fa-location-dot"></i> Украина, Жовква, ул. Набержная, 1</p>
-            <p><i class="fa-solid fa-timer"></i> Время работы с 10:00 до 19:00</p>
-            <p><i class="fa-sharp fa-solid fa-phone"></i> +38 (093) 496 58 00  </p>
-            <p><i class="fa-solid fa-envelope"></i> poland24.com.ua</p>
-        </div>
-        </div>
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+      </div>
+      <div class="f4">
+        <h3>Контакты</h3>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Украина, Жовква, ул.
+          Набержная, 1
+        </p>
+        <p><i class="fa-solid fa-timer"></i> Время работы с 10:00 до 19:00</p>
+        <p><i class="fa-sharp fa-solid fa-phone"></i> +38 (093) 496 58 00</p>
+        <p><i class="fa-solid fa-envelope"></i> poland24.com.ua</p>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

@@ -176,7 +176,7 @@
       <div class="sign-up">
         <div class="top-sign-up">
           <h3>Вход</h3>
-          <img src="img/main/vxod-exit.svg" alt="" />
+          <img src="img/main/vxod-exit.svg" alt="" class="exit-signUp " style="cursor: pointer;" />
         </div>
         <div class="center-sign">
           <p>У вас еще нету аккаунта ?</p>
@@ -186,8 +186,8 @@
           <img src="./img/main/register1.svg" alt="" />
           <img src="./img/main/register2.svg" alt="" />
         </div>
-        <input type="email" placeholder="Введите е-mail" />
-        <input type="password" placeholder="Введиите пароль" />
+        <input type="email" id="login__email" placeholder="Введите е-mail" />
+        <input type="password" id="login__password" placeholder="Введиите пароль" />
         <div class="sign-up-bottom">
           <div>
             <input type="checkbox" style="width: 30px; padding: 0" />
@@ -195,7 +195,9 @@
           </div>
           <p style="padding-top: 15px">Забыли пароль?</p>
         </div>
-        <button class="btn-vxod">Войти</button>
+        <a href="info-admin.html" style="display: none;" class="btn-vxode"><button class="btn-vxod">Войти</button></a>
+        <a href="info-del.html" style="display: none;" class="btn-vxode-user"><button class="btn-vxod">Войти</button></a>
+        <p style="color: red;" class="warning-text">Для отправки данных пожалуйста нажимайте `Enter`</p>
         <!-- <div class="btn-vxod">
             </div> -->
       </div>
@@ -230,7 +232,7 @@
         <div class="navbar">
           <div class="navbar-top  animate__animated animate__fadeInUp">
             <div class="logo">
-              <img src="./img/main/logo.svg" alt="" />
+              <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
             </div>
             <div class="messengers">
               <div class="center-msg">
@@ -245,7 +247,7 @@
               <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
             </div>
             <button class="btn zakaz">Оформить заказ</button>
-            <h3 class="point"><span id="signIn" style="cursor:pointer;">Вход</span> <span id="signUp" style="cursor:pointer;">/Регистрация</span></h3>
+            <h3 class="point"><span id="signUp" style="cursor:pointer;">Вход</span> <span id="signIn" style="cursor:pointer;">/Регистрация</span></h3>
             <div
               class="selected"
               style="display: flex; align-items: center; gap: 10px"
@@ -259,14 +261,14 @@
             </div>
           </div>
           <div class="navbar-bottom animate__animated animate__backInUp">
-            <li><a href="#">О компании </a></li>
-            <li><a href="#">Список магазину</a></li>
-            <li><a href="./zapros.html">Отзывы</a></li>
-            <li><a href="./ans-ques.html">Вопрос-ответ</a></li>
-            <li><a href="#calc" for="calc">Калькулятор </a></li>
-            <li><a href="#">Контакты </a></li>
+            <li><a href="./zapros.html">О компании </a></li>
+            <li><a href="magazine.html">Список магазину</a></li>
+            <li><a href="zapros.html">Отзывы</a></li>
+            <li><a href="ans-ques.html">Вопрос -ответ</a></li>
+            <li><a href="#calc">Калькулятор </a></li>
+            <li><a href="#footer">Контакты </a></li>
             <li>
-              <a href="#"
+              <a href="delivery.html"
                 ><button class="pomosh">
                   <i class="fa-solid fa-question"></i> Помощь в поиске товаров
                 </button></a
@@ -301,11 +303,11 @@
             </div>
           </div>
           <div class="header-r" data-aos="flip-right">
-            <img src="./img/main/header-r1.svg" alt="" class="header-i1" />
-            <img src="./img/main/header-r2.svg" alt="" class="header-i2" />
-            <img src="./img/main/header-r3.svg" alt="" class="header-i3" />
-            <img src="./img/main/header-r4.svg" alt="" class="header-i4" />
-            <img src="./img/main/header-r5.svg" alt="" class="header-i5" />
+            <img src="./img/main/header-r1.png" alt="" class="header-i1" />
+            <img src="./img/main/header-r2.png" alt="" class="header-i2" />
+            <img src="./img/main/header-r3.png" alt="" class="header-i3" />
+            <img src="./img/main/header-r4.png" alt="" class="header-i4" />
+            <img src="./img/main/header-r5.png" alt="" class="header-i5" />
           </div>
         </div>
       </section>
@@ -508,8 +510,8 @@
                 Веб-сайтом eBay.com и его местными версиями в нескольких странах
                 владела компания eBay Enterprise,
               </p>
-              <dir>Сроки доставки: <b>до 7 дней</b></dir>
-              <dir>Комиссия на доставку<b>0,68%</b></dir>
+              <div>Сроки доставки: <b>до 7 дней</b></div>
+              <div>Комиссия на доставку<b>0,68%</b></div>
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
@@ -521,8 +523,8 @@
                 Веб-сайтом eBay.com и его местными версиями в нескольких странах
                 владела компания eBay Enterprise,
               </p>
-              <dir>Сроки доставки: <b>до 7 дней</b></dir>
-              <dir>Комиссия на доставку<b>0,68%</b></dir>
+              <div>Сроки доставки: <b>до 7 дней</b></div>
+              <div>Комиссия на доставку<b>0,68%</b></div>
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
@@ -534,8 +536,8 @@
                 Веб-сайтом eBay.com и его местными версиями в нескольких странах
                 владела компания eBay Enterprise,
               </p>
-              <dir>Сроки доставки: <b>до 7 дней</b></dir>
-              <dir>Комиссия на доставку<b>0,68%</b></dir>
+              <div>Сроки доставки: <b>до 7 дней</b></div>
+              <div>Комиссия на доставку<b>0,68%</b></div>
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
@@ -547,8 +549,8 @@
                 Веб-сайтом eBay.com и его местными версиями в нескольких странах
                 владела компания eBay Enterprise,
               </p>
-              <dir>Сроки доставки: <b>до 7 дней</b></dir>
-              <dir>Комиссия на доставку<b>0,68%</b></dir>
+              <div>Сроки доставки: <b>до 7 дней</b></div>
+              <div>Комиссия на доставку<b>0,68%</b></div>
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
@@ -560,8 +562,8 @@
                 Веб-сайтом eBay.com и его местными версиями в нескольких странах
                 владела компания eBay Enterprise,
               </p>
-              <dir>Сроки доставки: <b>до 7 дней</b></dir>
-              <dir>Комиссия на доставку<b>0,68%</b></dir>
+              <div>Сроки доставки: <b>до 7 дней</b></div>
+              <div>Комиссия на доставку<b>0,68%</b></div>
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
@@ -570,7 +572,7 @@
       </section>
 
       <!-- footer -->
-      <div class="footer">
+      <div class="footer" id="footer">
         <div class="f1">
           <img
             src="img/main/footer-logo.svg"
@@ -597,9 +599,9 @@
         </div>
         <div class="f3">
           <p>Мы в соц.сетяц:</p>
-          <a href="#"><img src="./img/main/foot1.svg" alt="" /></a>
-          <a href="#"><img src="./img/main/foot2.svg" alt="" /></a>
-          <a href="#"><img src="./img/main/foot3.svg" alt="" /></a>
+          <a href="https://www.facebook.com/"><img src="./img/main/foot1.svg" alt="" /></a>
+          <a href="https://www.wikipedia.com/"><img src="./img/main/foot2.svg" alt="" /></a>
+          <a href="https://www.instagram.com/"><img src="./img/main/foot3.svg" alt="" /></a>
         </div>
         <div class="f4">
           <h3>Контакты</h3>

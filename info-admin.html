@@ -16,7 +16,7 @@
     <div class="navbar">
         <div class="navbar-top">
             <div class="logo">
-                <img src="./img/main/logo.svg" alt="">
+                <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
             </div>
             <div class="messengers">
                 <div class="center-msg">
@@ -30,8 +30,14 @@
                 <p><b>'zł&nbsp;</b>00,00</p>
                 <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00 </p>
             </div>
-            <button class="btn zakaz">Оформить заказ</button>
-            <div><h3 class="point">Вход /Регистрация</h3></div>
+            <button class="btn zakaz">Оформить</button>
+            <div class="flex gap-2 items-center bg-white rounded-t-md px-1" id="admin">
+                <p class="w-10 h-10 bg-[#9B51E0] border-red-500 border-2 rounded-full text-white flex items-center justify-center">AA</p>
+                <div>
+                    <h2 class="font-medium">Azimov Azamat</h2>
+                    <p class="text-gray-600">azamatjonazimov@gmail.com</p>
+                </div>
+            </div>
             <div style="display: flex; align-items: center; gap: 10px;">
                 <img src="./img/main/navbar-icon3.svg" alt="">
                 <select name="" id="country">
@@ -42,18 +48,23 @@
             </div>
         </div>
         <div class="navbar-bottom">
-            <li><a href="#">О компании </a></li>
-            <li><a href="#">Список магазину</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Вопрос -ответ</a></li>
-            <li><a href="#">Калькулятор </a></li>
-            <li><a href="#">Контакты </a></li>
-            <li><a href="#"><button class="pomosh"><i class="fa-solid fa-question"></i> Помощь в поиске товаров </button></a></li>
+            <li><a href="./zapros.html">О компании </a></li>
+            <li><a href="magazine.html">Список магазину</a></li>
+            <li><a href="zapros.html">Отзывы</a></li>
+            <li><a href="ans-ques.html">Вопрос -ответ</a></li>
+            <li><a href="index.html">Калькулятор </a></li>
+            <li><a href="#footer">Контакты </a></li>
+            <li>
+            <a href="delivery.html"
+                ><button class="pomosh">
+                <i class="fa-solid fa-question"></i> Помощь в поиске товаров
+                </button></a>
+        </li>
         </div>
     </div>
 
     <!-- header -->
-    <header class="pt-[200px] min-[1080px]:pt-[150px] min-[1090px]:flex-nowrap flex-wrap  min-[680px]:pl-[75px] pl-6  bg-[#D2D2D2] flex gap-5 pb-[30px] ">
+    <header class="pt-[200px] min-[1080px]:pt-[170px] min-[1090px]:flex-nowrap flex-wrap  min-[680px]:pl-[75px] pl-6  bg-[#D2D2D2] flex gap-5 pb-[30px] ">
 
         <!-- Добавить заказ -->
         <div class="fixed transition-all duration-700  overflow-y-scroll top-[-250%] left-[50%] bg-white translate-x-[-50%] translate-y-[-50%] w-[100%] px-10 py-5 z-[99999] h-[100vh] corzinka">
@@ -163,12 +174,12 @@
 
 
         <!-- sidebar-container -->
-        <div class="flex flex-col gap-1 min-[1090px]:w-auto w-full pr-20 min-[1090px]:pr-0">
-            <div class="flex gap-3 items-center py-1 bg-white rounded-t-md px-1">
-                <p class="w-10 h-10 bg-[#9B51E0] border-red-500 border-2 rounded-full text-white flex items-center justify-center">BR</p>
+        <div class="flex flex-col gap-1 min-[1090px]:w-auto w-full pr-20 min-[1090px]:pr-0 ">
+            <div class="flex gap-2 items-center bg-white rounded-t-md px-1">
+                <p class="w-10 h-10 bg-[#9B51E0] border-red-500 border-2 rounded-full text-white flex items-center justify-center">AA</p>
                 <div>
-                    <h2 class="font-medium">Поварницына Диана</h2>
-                    <p class="text-gray-600">lawson@example.com</p>
+                    <h2 class="font-medium">Azimov Azamat</h2>
+                    <p class="text-gray-600">azamatjonazimov@gmail.com</p>
                 </div>
             </div>
             <div class="flex gap-3 items-center bg-[#D2D2D2] py-1  px-1 cursor-pointer" id="zakazi">
@@ -911,7 +922,7 @@
            
     </header>
     <!-- footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="f1">
             <img src="img/main/footer-logo.svg" alt="" style="margin-bottom: 10px;">
             <p>Copyright © 2022  Poland24.com.ua. Все права защищены.</p>
