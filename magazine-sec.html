@@ -18,31 +18,33 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/hover.css">    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="navbar">
-      <div class="navbar-top animate__animated animate__fadeInLeft">
+      <div class="navbar-top  animate__animated animate__fadeInUp">
         <div class="logo">
           <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
         </div>
         <div class="messengers">
           <div class="center-msg">
-            <span>Наши мессенджеры</span>
-            <a href="#"><img src="./img/main/navbar-icon1.svg" alt="" /></a>
-            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" /></a>
+            <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
           </div>
-          <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+          <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
         </div>
         <div class="sum">
           <p><b>'zł&nbsp;</b>00,00</p>
           <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
         </div>
-        <button class="btn zakaz">Оформить заказ</button>
-        <div><h3 class="point">Вход /Регистрация</h3></div>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <img src="./img/main/navbar-icon3.svg" alt="" />
-          <select name="" id="country">
+        <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+        <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
+        <div
+          class="selected"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img src="./img/main/navbar-icon3.svg" />
+          <select name="" id="country" style="outline: none; cursor: pointer;">
             <option value="UKR">UKR</option>
             <option value="BRT">BRT</option>
             <option value="USA">USA</option>
@@ -402,15 +404,16 @@
             <h1 style="display: inline-block">Каталог магазинов</h1>
           </div>
           <div style="display: flex; align-items: center; gap: 10px">
-            <img src="./img/main/ArrowLeft.svg" alt="" />
+            <img src="./img/main/ArrowLeft.svg" class="hvr-wobble-to-top-right" alt="" />
             <span> 1/5</span>
-            <img src="./img/main/katalogmg2.svg" alt="" />
+            <img src="./img/main/katalogmg2.svg" class="hvr-wobble-to-top-right" alt="" />
           </div>
-          <button class="vse-mag-btn">все магазины</button>
+  <link rel="stylesheet" href="./css/hover.css">
+          <button class="vse-mag-btn border px-5 py-3 border-[#95A4AA] rounded-md hvr-curl-bottom-right hvr-sweep-to-left">все магазины</button>
         </div>
               
        <div class="flex scrollbar overflow-scroll w-[100%] justify-start gap-10">
-                <div class="py-3 animate__animated animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6">
+                <div class="py-3 animate__animated animate__backInRight wow hvr-radial-out min-h-[700px] px-5 border-1 rounded-md bg-white my-6">
                     <div class="flex md:justify-between flex-wrap gap-2 md:flex-nowrap items-center">
                         <p class="font-semibold">Экономов Павел</p>
                         <p class="text-gray-600">Feb 2, 2019 19:28</p>
@@ -424,12 +427,12 @@
                     <div class="text-4xl my-3 text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
                     <h1 class="text-xl my-4 font-bold">Организовали быструю доставку!</h1>
                     <p class="text-md my-1">Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в </p>
-                    <div class="flex box justify-start overflow-x-scroll gap-5">
+                    <div class="flex bx justify-start overflow-x-scroll gap-5">
                         <img src="./img/info deliv/card-card1.svg" alt="">
                         <img src="./img/info deliv/card-card2.svg" alt="">
                     </div>
                 </div>
-                <div  class="py-3 animate__animated animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6 ">
+                <div  class="py-3 animate__animated animate__backInRight wow hvr-radial-out px-5 border-1 rounded-md bg-white my-6 ">
                     <div class="flex md:justify-between flex-wrap gap-2 md:flex-nowrap items-center">
                         <p class="font-semibold">Экономов Павел</p>
                         <p class="text-gray-600">Feb 2, 2019 19:28</p>
@@ -443,12 +446,12 @@
                     <div class="text-4xl my-3 text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
                     <h1 class="text-xl my-4 font-bold">Организовали быструю доставку!</h1>
                     <p class="text-md my-1">Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в </p>
-                    <div class="flex box justify-start overflow-x-scroll gap-5">
+                    <div class="flex bx justify-start overflow-x-scroll gap-5">
                         <img src="./img/info deliv/card-card1.svg" alt="">
                         <img src="./img/info deliv/card-card2.svg" alt="">
                     </div>
                 </div>
-                <div class="py-3 animate__animated animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6">
+                <div class="py-3 animate__animated hvr-radial-out animate__backInRight wow box px-5 border-1 rounded-md bg-white my-6">
                     <div class="flex md:justify-between flex-wrap gap-2 md:flex-nowrap items-center">
                         <p class="font-semibold">Экономов Павел</p>
                         <p class="text-gray-600">Feb 2, 2019 19:28</p>
@@ -462,7 +465,7 @@
                     <div class="text-4xl my-3 text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
                     <h1 class="text-xl my-4 font-bold">Организовали быструю доставку!</h1>
                     <p class="text-md my-1">Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в </p>
-                    <div class="flex box justify-start overflow-x-scroll gap-5">
+                    <div class="flex bx justify-start overflow-x-scroll gap-5">
                         <img src="./img/info deliv/card-card1.svg" alt="">
                         <img src="./img/info deliv/card-card2.svg" alt="">
                     </div>

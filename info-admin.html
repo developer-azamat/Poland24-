@@ -4,50 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 3</title>
+    <title>Admin page</title>
     <link rel="stylesheet" href="./css/magazine-sec.css">
     <!-- tailwinf=d css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/hover.css">
     <link rel="icon" href="./img/icon/icon.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-top">
+        <div class="navbar-top  animate__animated animate__fadeInUp">
             <div class="logo">
-                <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
+              <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
             </div>
             <div class="messengers">
-                <div class="center-msg">
-                    <span>Наши мессенджеры</span>
-                    <a href="#"><img src="./img/main/navbar-icon1.svg" alt=""></a>
-                    <a href="#"><img src="./img/main/navbar-icon2.svg" alt=""></a>
-                </div>
-                <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+              <div class="center-msg">
+                <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+                <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
+              </div>
+              <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
             </div>
             <div class="sum">
-                <p><b>'zł&nbsp;</b>00,00</p>
-                <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00 </p>
+              <p><b>'zł&nbsp;</b>00,00</p>
+              <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
             </div>
-            <button class="btn zakaz">Оформить</button>
-            <div class="flex gap-2 items-center bg-white rounded-t-md px-1" id="admin">
-                <p class="w-10 h-10 bg-[#9B51E0] border-red-500 border-2 rounded-full text-white flex items-center justify-center">AA</p>
-                <div>
-                    <h2 class="font-medium">Azimov Azamat</h2>
-                    <p class="text-gray-600">azamatjonazimov@gmail.com</p>
-                </div>
+            <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+            <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
+            <div
+              class="selected"
+              style="display: flex; align-items: center; gap: 10px"
+            >
+              <img src="./img/main/navbar-icon3.svg" />
+              <select name="" id="country" style="outline: none; cursor: pointer;">
+                <option value="UKR">UKR</option>
+                <option value="BRT">BRT</option>
+                <option value="USA">USA</option>
+              </select>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px;">
-                <img src="./img/main/navbar-icon3.svg" alt="">
-                <select name="" id="country">
-                    <option value="UKR">UKR</option>
-                    <option value="BRT">BRT</option>
-                    <option value="USA">USA</option>
-                </select>
-            </div>
-        </div>
+          </div>
         <div class="navbar-bottom">
             <li><a href="./zapros.html">О компании </a></li>
             <li><a href="magazine.html">Список магазину</a></li>
@@ -65,7 +62,7 @@
     </div>
 
     <!-- header -->
-    <header class="pt-[200px] min-[1080px]:pt-[170px] min-[1090px]:flex-nowrap flex-wrap  min-[680px]:pl-[75px] pl-6  bg-[#D2D2D2] flex gap-5 pb-[30px] ">
+    <header class="pt-[200px] min-h-[85vh] min-[1080px]:pt-[170px] min-[1090px]:flex-nowrap flex-wrap  min-[680px]:pl-[75px] pl-6  bg-[#D2D2D2] flex gap-5 pb-[30px] ">
 
         <!-- Добавить заказ -->
         <div class="fixed transition-all duration-700  overflow-y-scroll top-[-250%] left-[50%] bg-white translate-x-[-50%] translate-y-[-50%] w-[100%] px-10 py-5 z-[99999] h-[100vh] corzinka">

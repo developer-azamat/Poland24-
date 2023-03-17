@@ -21,7 +21,23 @@
     cursor: pointer;
     scale: .9;
 }
+.hvr-outline-in{
+    transition: all .3s ease;
+}
+.hvr-outline-in:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+.hvr-outline-in-f3{
+    transition: all .3s ease;
+    margin-top: 10px;
+}
+.hvr-outline-in-f3:hover{
+    transform: scale(1.1) translateY(5px);
+}
 
+.point .sign-in:hover{
+    color: #00BA88;
+}
 .container{
     position: relative;
     width: 100%;
@@ -71,10 +87,7 @@
     display: flex;
     flex-direction: column;
 }
-.btn:hover{
-    box-shadow: 0 0 10px 1px white inset;
-    scale: 1.07;
-}
+
 b{
     color: black;
     margin-right: 2px;
@@ -167,7 +180,7 @@ select:optional{
 
 .header-r{
     width: 50%;
-    /* margin-top: 90px; */
+    margin-top: 50px;
     position: relative;
 }
 
@@ -238,7 +251,6 @@ select:optional{
     background: rgba(234, 12, 12, 1);
     color: white;
     transition: all .4s ease;
-    cursor: pointer;
 }
 .butt-z:hover {
     letter-spacing: .5px ;
@@ -290,14 +302,14 @@ select:optional{
     border: 1px solid transparent;
     cursor: pointer;
 }
-.card:hover {
+/* .card:hover {
     background: rgba( 254, 254, 254, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
+} */
 
 .num{
     position: absolute;
@@ -313,9 +325,9 @@ select:optional{
 .card-title{
     background: #fff;
     top: 35px;
+    /* color: #000000; */
     left: 27px;
     padding: 4px;
-    color: #2D2D2D;
     font-weight: 500;
     font-size: smaller;
     position: absolute;
@@ -325,7 +337,9 @@ select:optional{
 }
 .card p{
     margin-top: 50%;
-    color: rgba(45, 45, 45, 0.9);
+}
+.card:hover .card-title{
+    background: #0ae1f4;
 }
 
 .btn-div{
@@ -367,7 +381,7 @@ select:optional{
 
 .center-paragr{
     color: rgba(45, 45, 45, 0.9);
-    margin: 50px 0;
+    margin: 20px 0;
     letter-spacing: 1px;
     width: 30vw;
 }
@@ -396,7 +410,7 @@ select:optional{
 .calc{
     width: 85vw;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     background: #EA0C0C;
     color: white;
@@ -417,7 +431,7 @@ select:optional{
 .calc-l h1{
     width: 35vw;
     font-size: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .form-main label {
@@ -583,6 +597,7 @@ select:optional{
 .f2-child{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footer i{
@@ -596,7 +611,7 @@ select:optional{
   
   .gallery-cell {
     width: 24%;
-    height: 350px;
+    min-height: 350px;
     margin-right: 10px;
     background: #fff;
     counter-increment: gallery-cell;

@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
@@ -24,6 +25,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!-- hover css -->
+  <link rel="stylesheet" href="./css/hover.css">
   </head>
   <body>
     <div class="container">
@@ -237,24 +240,23 @@
             </div>
             <div class="messengers">
               <div class="center-msg">
-                <span>Наши мессенджеры</span>
-                <a href="#"><img src="./img/main/navbar-icon1.svg" alt="" /></a>
-                <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" /></a>
+                <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+                <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
               </div>
-              <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+              <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
             </div>
             <div class="sum">
               <p><b>'zł&nbsp;</b>00,00</p>
               <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
             </div>
-            <button class="btn zakaz">Оформить заказ</button>
-            <h3 class="point"><span id="signUp" style="cursor:pointer;">Вход</span> <span id="signIn" style="cursor:pointer;">/Регистрация</span></h3>
+            <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+            <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
             <div
               class="selected"
               style="display: flex; align-items: center; gap: 10px"
             >
               <img src="./img/main/navbar-icon3.svg" />
-              <select name="" id="country">
+              <select name="" id="country" style="outline: none; cursor: pointer;">
                 <option value="UKR">UKR</option>
                 <option value="BRT">BRT</option>
                 <option value="USA">USA</option>
@@ -270,8 +272,8 @@
             <li><a href="#footer">Контакты </a></li>
             <li>
               <a href="delivery.html"
-                ><button class="pomosh">
-                  <i class="fa-solid fa-question"></i> Помощь в поиске товаров
+                ><button class="pomosh hvr-icon-bounce">
+                  <i class="fa-solid fa-question hvr-icon"></i> Помощь в поиске товаров
                 </button></a
               >
             </li>
@@ -300,7 +302,7 @@
                 id="url-inp"
                 placeholder="Вставить ссылку на товар"
               />
-              <button class="butt-z">Заказать</button>
+              <button class="butt-z hvr-bubble-float-bottom">Заказать</button>
             </div>
           </div>
           <div class="header-r" data-aos="flip-right">
@@ -317,7 +319,7 @@
         <!-- howto -->
         <div class="howto">
           <div class="howto-t">
-            <div style="display: flex !important; gap: 10px">
+            <div class="hvr-shutter-out-horizontal" style="display: flex !important; gap: 10px">
               <span class="line"></span>
               <h1>Как это работает</h1>
             </div>
@@ -326,7 +328,7 @@
             </div>
           </div>
           <div class="howtocards">
-            <div class="card animate__animated animate__fadeInUp">
+            <div class="card hvr-radial-out text-white animate__animated animate__fadeInUp">
               <h1 class="num">01</h1>
               <div class="card-title">Вы выбираете товар</div>
               <p>
@@ -335,7 +337,7 @@
                 обитателям водоемов.
               </p>
             </div>
-            <div class="card">
+            <div class="card hvr-radial-out text-white animate__animated animate__fadeInUp">
               <h1 class="num">02</h1>
               <div class="card-title">Предоставляете ссылку</div>
               <p>
@@ -344,7 +346,7 @@
                 обитателям водоемов.
               </p>
             </div>
-            <div class="card">
+            <div class="card hvr-radial-out text-white animate__animated animate__fadeInUp">
               <h1 class="num">03</h1>
               <div class="card-title">Внести предоплату</div>
               <p>
@@ -353,7 +355,7 @@
                 обитателям водоемов.
               </p>
             </div>
-            <div class="card">
+            <div class="card hvr-radial-out text-white animate__animated animate__fadeInUp">
               <h1 class="num">04</h1>
               <div class="card-title">Выкупаем товар и везем в Украину</div>
               <p>
@@ -362,7 +364,7 @@
                 обитателям водоемов.
               </p>
             </div>
-            <div class="card">
+            <div class="card hvr-radial-out text-white animate__animated animate__fadeInUp">
               <h1 class="num">05</h1>
               <div class="card-title">Оплатить остаток</div>
               <p>
@@ -373,7 +375,7 @@
             </div>
           </div>
           <div class="btn-div">
-            <button class="butt-z" style="scale: 1.1">Заказать</button>
+            <button class="butt-z hvr-bubble-float-bottom" style="scale: 1.1">Заказать</button>
           </div>
         </div>
         <div class="about-me" data-aos="zoom-in-up">
@@ -400,10 +402,6 @@
           <div class="calc-l">
             <h1>Расчитай стоимость доставки товаров из Польши</h1>
             <li>
-              Комиссия сервиса для товаров с фактурой VAT стоимостью от 250zł:
-              16,38%
-            </li>
-            <li>
               Комиссия сервиса для товаров стоимостью до 250zl (VAT/ без VAT):
               50zł.
             </li>
@@ -424,10 +422,9 @@
                 <button>€</button>
               </label>
               <input type="text" placeholder="Доставка*, zł." class="inpt" />
-              <button class="rasch">Расчитать</button>
+              <button class="rasch hvr-curl-bottom-right hvr-buzz-out " style="cursor: pointer;">Расчитать</button>
             </form>
             <hr />
-            <h1 class="title-calc">Сумма, zł &nbsp;&nbsp;&nbsp; 1234,56</h1>
             <h1 class="title-calc">Сумма, € &nbsp;&nbsp;&nbsp; 1234,56</h1>
             <label for="check" class="label-check"
               ><input type="checkbox" id="check" checked />
@@ -486,24 +483,21 @@
               <h1 style="display: inline-block">Каталог магазинов</h1>
             </div>
             <div style="display: flex; align-items: center; gap: 10px">
-              <a href="./magazine-sec.html"><img src="./img/main/ArrowLeft.svg"/></a>
+              <a href="./magazine-sec.html"><img class="hvr-wobble-bottom" src="./img/main/ArrowLeft.svg"/></a>
               <span> 1/5</span>
-              <a href="./magazine.html"><img src="./img/main/katalogmg2.svg"/></a>
+              <a href="./magazine.html"><img class="hvr-wobble-bottom"  src="./img/main/katalogmg2.svg"/></a>
             </div>
-            <a href="./magazine.html" class="vse-mag-btn cursor-pointer no-underline hover:underline" target="_blank">все магазины</a>
+            <a href="./magazine.html" class="vse-mag-btn hvr-sweep-to-right cursor-pointer no-underline hover:underline" target="_blank">все магазины</a>
           </div>
         </div>
         <p><code style="opacity: 0">wrapAround: true</code></p>
 
         <!-- Flickity HTML init -->
         <div
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
           class="gallery js-flickity"
           data-flickity-options='{ "wrapAround": true }'
         >
-          <div class="gallery-cell cart">
+          <div class="gallery-cell cart animate__animated animate__bounceInUp">
             <img src="./img/main/f1.svg" alt="" />
             <div class="cart-body">
               <h3 style="font-weight: 600">eBay</h3>
@@ -516,7 +510,7 @@
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
-          <div class="gallery-cell cart">
+          <div class="gallery-cell cart animate__animated animate__bounceInUp">
             <img src="./img/main/f2.svg" alt="" />
             <div class="cart-body">
               <h3 style="font-weight: 600">eBay</h3>
@@ -529,7 +523,7 @@
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
-          <div class="gallery-cell cart">
+          <div class="gallery-cell cart animate__animated animate__bounceInUp">
             <img src="./img/main/f3.svg" alt="" />
             <div class="cart-body">
               <h3 style="font-weight: 600">eBay</h3>
@@ -542,7 +536,7 @@
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
-          <div class="gallery-cell cart">
+          <div class="gallery-cell cart animate__animated animate__bounceInUp">
             <img src="./img/main/f4.svg" alt="" />
             <div class="cart-body">
               <h3 style="font-weight: 600">eBay</h3>
@@ -555,7 +549,7 @@
               <img src="./img/main/vektor.svg" alt="" class="vektor-cart" />
             </div>
           </div>
-          <div class="gallery-cell cart">
+          <div class="gallery-cell cart animate__animated animate__bounceInUp">
             <img src="./img/main/f5.svg" alt="" />
             <div class="cart-body">
               <h3 style="font-weight: 600">eBay</h3>
@@ -600,9 +594,9 @@
         </div>
         <div class="f3">
           <p>Мы в соц.сетяц:</p>
-          <a href="https://www.facebook.com/"><img src="./img/main/foot1.svg" alt="" /></a>
-          <a href="https://www.wikipedia.com/"><img src="./img/main/foot2.svg" alt="" /></a>
-          <a href="https://www.instagram.com/"><img src="./img/main/foot3.svg" alt="" /></a>
+          <a href="https://www.facebook.com/"><img src="./img/main/foot1.svg" alt="" class="hvr-outline-in-f3" /></a>
+          <a href="https://www.wikipedia.com/"><img src="./img/main/foot2.svg" alt="" class="hvr-outline-in-f3" /></a>
+          <a href="https://www.instagram.com/"><img src="./img/main/foot3.svg" alt="" class="hvr-outline-in-f3" /></a>
         </div>
         <div class="f4">
           <h3>Контакты</h3>

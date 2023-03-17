@@ -12,7 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <link rel="icon" href="./img/icon/icon.jpg">
+    <link rel="stylesheet" href="./css/hover.css">
+    <link rel="icon" href="./img/icon/icon.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,11 +21,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-
     <div class="sign-in">
       <div class="sign-in-top">
         <h3>Регистрация</h3>
-        <img src="./img/main/vxod-exit.svg" style="cursor: pointer;" class="exit-signIn"/>
+        <img
+          src="./img/main/vxod-exit.svg"
+          style="cursor: pointer"
+          class="exit-signIn"
+        />
       </div>
       <div class="center-sign">
         <p>У вас уже есть аккаунт ?</p>
@@ -48,7 +52,11 @@
     <div class="sign-up">
       <div class="top-sign-up">
         <h3>Вход</h3>
-        <img src="img/main/vxod-exit.svg" alt="" class="exit-signUp cursor-pointer" />
+        <img
+          src="img/main/vxod-exit.svg"
+          alt=""
+          class="exit-signUp cursor-pointer"
+        />
       </div>
       <div class="center-sign">
         <p>У вас еще нету аккаунта ?</p>
@@ -301,27 +309,29 @@
     </div>
     <!-- navbar -->
     <div class="navbar">
-      <div class="navbar-top animate__animated animate__bounceInLeft">
+      <div class="navbar-top  animate__animated animate__fadeInUp">
         <div class="logo">
           <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
         </div>
         <div class="messengers">
           <div class="center-msg">
-            <span>Наши мессенджеры</span>
-            <a href="#"><img src="./img/main/navbar-icon1.svg" alt="" /></a>
-            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" /></a>
+            <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
           </div>
-          <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+          <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
         </div>
         <div class="sum">
           <p><b>'zł&nbsp;</b>00,00</p>
           <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
         </div>
-        <button class="btn zakaz">Оформить заказ</button>
-        <h3 class="point"><span id="signIn" style="cursor:pointer;">Вход</span> <span id="signUp" style="cursor:pointer;">/Регистрация</span></h3>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <img src="./img/main/navbar-icon3.svg" alt="" />
-          <select name="" id="country" class="outline-none">
+        <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+        <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
+        <div
+          class="selected"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img src="./img/main/navbar-icon3.svg" />
+          <select name="" id="country" style="outline: none; cursor: pointer;">
             <option value="UKR">UKR</option>
             <option value="BRT">BRT</option>
             <option value="USA">USA</option>
@@ -347,7 +357,7 @@
 
     <div
       data-aos="zoom-out"
-      class="header py-[150px] sm:pl-[100px] sm:pr-[60px] px-10 bg-[#D2D2D2]"
+      class="header pt-[150px] pb-[40px] sm:pl-[100px] sm:pr-[60px] px-10 bg-[#D2D2D2]"
     >
       <p class="text-base inline-block">Главная</p>
       &nbsp;<i class="fa-solid fa-chevron-right"></i>
@@ -370,27 +380,27 @@
             >
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Europe</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Asia</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">America</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Africa</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Australia</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Spain</h2>
               </div>
             </div>
           </div>
@@ -403,19 +413,19 @@
             <div class="sidebar-body-top py-3 h-[200px] overflow-y-scroll">
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Electronics</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Accessories</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Automobile</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
-                <h2 class="font-medium">Category</h2>
+                <h2 class="font-medium">Tech</h2>
               </div>
               <div class="flex gap-3 border-b-2 py-2">
                 <p class="w-7 h-7 rounded-full bg-slate-500"></p>
@@ -447,7 +457,7 @@
             <div
               class="text-base flex items-center gap-3 bg-slate-600 rounded-xl px-2 py-1 text-white"
             >
-              <p>Электроника и техника</p>
+              <p>Электроника</p>
               <i class="fa-solid fa-xmark"></i>
             </div>
             <div
@@ -459,7 +469,7 @@
             <div
               class="text-base flex items-center gap-3 bg-slate-600 rounded-xl px-2 py-1 text-white"
             >
-              <p>Авто и мототовары</p>
+              <p>Авто</p>
               <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="flex items-center gap-1 text-slate-700">
@@ -472,7 +482,9 @@
           >
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f1.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Amazon</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Amazon</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -486,7 +498,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f2.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">eBay</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">eBay</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -500,7 +514,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f3.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Yoox</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Yoox</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -514,7 +530,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f4.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">KitchenAid</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">KitchenAid</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -528,7 +546,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f5.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Zara</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Zara</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -543,7 +563,9 @@
 
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f1.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Amazon</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Amazon</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -557,7 +579,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f2.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">eBay</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">eBay</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -571,7 +595,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f3.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Yoox</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Yoox</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -585,7 +611,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f4.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">KitchenAid</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">KitchenAid</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -599,7 +627,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f5.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Zara</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Zara</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -613,7 +643,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f1.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Amazon</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Amazon</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -627,7 +659,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f2.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">eBay</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">eBay</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -641,7 +675,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f3.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Yoox</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Yoox</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -655,7 +691,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f4.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">KitchenAid</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">KitchenAid</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -669,7 +707,9 @@
             </div>
             <div class="card bg-white py-4 px-5 rounded-md text-[#2D2D2D]">
               <img src="./img/main/f5.svg" class="my-0 mx-auto" />
-              <h2 class="font-bold text-2xl text-center py-3"><a href="magazine-sec.html">Zara</a></h2>
+              <h2 class="font-bold text-2xl text-center py-3">
+                <a href="magazine-sec.html">Zara</a>
+              </h2>
               <div class="flex justify-between text-lg gap-2">
                 <div>
                   <p class="font-normal">Доставка:</p>
@@ -681,13 +721,12 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
       <div class="flex p justify-center py-3 text-lg">
         <button
-          class="py-3 px-7 rounded-md bg-transparent border border-gray-800 font-semibold animate__animated animate__wobble"
+          class="py-3 px-7 rounded-md bg-transparent border border-gray-800 font-semibold animate__animated hvr-bounce-to-bottom animate__wobble"
         >
           Показать еще
         </button>
@@ -697,24 +736,6 @@
       >
         <div class="sm:w-[60%]w-full">
           <p>
-            Компания Poland24 осуществляет доставку из любого
-            магазина/поставщика/производителя стран Евросоюза, которые
-            осуществляют доставку товара курьером в Польшу. <br />
-            <br />
-            Компания Poland24 осуществляет доставку из любого
-            магазина/поставщика/производителя стран Евросоюза, которые
-            осуществляют доставку товара курьером в Польшу. Компания Poland24
-            осуществляет доставку из любого магазина/поставщика/производителя
-            стран Евросоюза, которые осуществляют доставку товара курьером в
-            Польшу.
-          </p>
-        </div>
-        <div class="sm:w-[60%] w-full">
-          <p>
-            Компания Poland24 осуществляет доставку из любого
-            магазина/поставщика/производителя стран Евросоюза, которые
-            осуществляют доставку товара курьером в Польшу. <br />
-            <br />
             Компания Poland24 осуществляет доставку из любого
             магазина/поставщика/производителя стран Евросоюза, которые
             осуществляют доставку товара курьером в Польшу.

@@ -18,31 +18,34 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="./css/hover.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="navbar">
-      <div class="navbar-top">
+      <div class="navbar-top  animate__animated animate__fadeInUp">
         <div class="logo">
-            <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
+          <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
         </div>
         <div class="messengers">
           <div class="center-msg">
-            <span>Наши мессенджеры</span>
-            <a href="#"><img src="./img/main/navbar-icon1.svg" alt="" /></a>
-            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" /></a>
+            <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
           </div>
-          <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+          <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
         </div>
         <div class="sum">
           <p><b>'zł&nbsp;</b>00,00</p>
           <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
         </div>
-        <button class="btn zakaz">Оформить заказ</button>
-        <div><h3 class="point font-bold">Вход /Регистрация</h3></div>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <img src="./img/main/navbar-icon3.svg" alt="" />
-          <select name="" id="country">
+        <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+        <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
+        <div
+          class="selected"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img src="./img/main/navbar-icon3.svg" />
+          <select name="" id="country" style="outline: none; cursor: pointer;">
             <option value="UKR">UKR</option>
             <option value="BRT">BRT</option>
             <option value="USA">USA</option>
@@ -68,7 +71,7 @@
 
     <!-- header -->
     <header
-      class="pt-[150px] md:pl-[100px] pl-[50px] bg-[#D2D2D2] pr-[20px] md:pr-[70px] pb-[30px]"
+      class="pt-[150px] min-h-[85vh] md:pl-[100px] pl-[50px] bg-[#D2D2D2] pr-[20px] md:pr-[70px] pb-[30px]"
     >
       <div>
         <p class="text-base inline-block">Главная</p>

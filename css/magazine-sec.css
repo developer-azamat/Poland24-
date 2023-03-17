@@ -224,7 +224,7 @@ select:optional {
   width: 100%;
   border: #e62b06 1.85px dashed;
 }
-.box::-webkit-scrollbar {
+.bx::-webkit-scrollbar {
   height: 10px;
 }
 .cart:hover .capitalize {
@@ -233,7 +233,7 @@ select:optional {
 .cart:hover .absolute {
   color: cyan;
 }
-.box::-webkit-scrollbar-thumb {
+.bx::-webkit-scrollbar-thumb {
   background: rgba(122, 6, 254);
   transition: 0.4s linear;
 }

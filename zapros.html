@@ -9,38 +9,41 @@
     <!-- tailwinf=d css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/hover.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-top">
+        <div class="navbar-top  animate__animated animate__fadeInUp">
             <div class="logo">
-            <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
+              <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
             </div>
             <div class="messengers">
-                <div class="center-msg">
-                    <span>Наши мессенджеры</span>
-                    <a href="#"><img src="./img/main/navbar-icon1.svg" alt=""></a>
-                    <a href="#"><img src="./img/main/navbar-icon2.svg" alt=""></a>
-                </div>
-                <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+              <div class="center-msg">
+                <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+                <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
+              </div>
+              <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
             </div>
             <div class="sum">
-                <p><b>'zł&nbsp;</b>00,00</p>
-                <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00 </p>
+              <p><b>'zł&nbsp;</b>00,00</p>
+              <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
             </div>
-            <button class="btn zakaz">Оформить заказ</button>
-            <div><h3 class="point">Вход /Регистрация</h3></div>
-            <div style="display: flex; align-items: center; gap: 10px;">
-                <img src="./img/main/navbar-icon3.svg" alt="">
-                <select name="" id="country">
-                    <option value="UKR">UKR</option>
-                    <option value="BRT">BRT</option>
-                    <option value="USA">USA</option>
-                </select>
+            <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+            <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
+            <div
+              class="selected"
+              style="display: flex; align-items: center; gap: 10px"
+            >
+              <img src="./img/main/navbar-icon3.svg" />
+              <select name="" id="country" style="outline: none; cursor: pointer;">
+                <option value="UKR">UKR</option>
+                <option value="BRT">BRT</option>
+                <option value="USA">USA</option>
+              </select>
             </div>
-        </div>
+          </div>
         <div class="navbar-bottom">
             <li><a href="./zapros.html">О компании </a></li>
             <li><a href="magazine.html">Список магазину</a></li>
@@ -66,7 +69,7 @@
             <!-- card -->
             <div class="flex items-start gap-3 flex-wrap">
                 <div>
-                    <div class="py-7 px-5 border-1 rounded-md bg-white my-6" data-aos="fade-left"
+                    <div class="py-7 px-5 border-1 rounded-md bg-white my-6 hvr-rectangle-out " data-aos="fade-left"
                     data-aos-anchor="#example-anchor"
                     data-aos-offset="500"
                     data-aos-duration="500">
@@ -88,7 +91,7 @@
                         
                         
                     </div>
-                    <div class="py-7 px-5 border-1 rounded-md bg-white my-6" data-aos="zoom-out-right">
+                    <div class="py-7 px-5 border-1 rounded-md bg-white my-6 hvr-rectangle-out " data-aos="zoom-out-right">
                         <div class="flex justify-start flex-wrap sm:flex-nowrap items-center gap-5">
                             <p>Feb 2, 2019 19:28</p>
                             <p>Покупка в магазине: </p>
@@ -107,7 +110,7 @@
                         
                     </div>
 
-                    <div class="py-7 px-5 border-1 rounded-md bg-white my-6" data-aos="zoom-out-right">
+                    <div class="py-7 px-5 border-1 rounded-md bg-white my-6 hvr-rectangle-out " data-aos="zoom-out-right">
                         <div class="flex justify-start flex-wrap sm:flex-nowrap items-center gap-5">
                             <p>Feb 2, 2019 19:28</p>
                             <p>Покупка в магазине: </p>

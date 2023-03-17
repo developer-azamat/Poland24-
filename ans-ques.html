@@ -20,32 +20,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./css/hover.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
     <div class="navbar">
-      <div class="navbar-top animate__animated animate__bounceInLeft ">
+      <div class="navbar-top  animate__animated animate__fadeInUp">
         <div class="logo">
           <a href="index.html"><img src="./img/main/logo.svg" alt="" /></a>
         </div>
         <div class="messengers">
           <div class="center-msg">
-            <span>Наши мессенджеры</span>
-            <a href="#"><img src="./img/main/navbar-icon1.svg" alt="" /></a>
-            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" /></a>
+            <a href="#"><img src="./img/main/navbar-icon1.svg" class="hvr-wobble-vertical" /></a>
+            <a href="#"><img src="./img/main/navbar-icon2.svg" alt="" class="hvr-wobble-vertical"/></a>
           </div>
-          <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p>
+          <!-- <p><i class="fa-solid fa-envelope"></i>info@poland24.com.ua</p> -->
         </div>
         <div class="sum">
           <p><b>'zł&nbsp;</b>00,00</p>
           <p><b>€&nbsp;&nbsp;&nbsp;</b>00,00</p>
         </div>
-        <button class="btn zakaz">Оформить заказ</button>
-        <div><h3 class="point">Вход /Регистрация</h3></div>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <img src="./img/main/navbar-icon3.svg" alt="" />
-          <select name="" id="country">
+        <button class="btn zakaz hvr-bounce-to-left hvr-ripple-out">Оформить</button>
+        <h3 class="point"><span id="signUp" class="hvr-overline-from-center" style="cursor:pointer;  padding: 4px;">Вход</span> <span id="signIn" class="hvr-overline-reveal" style="cursor:pointer; padding: 4px;">/Регистрация</span></h3>
+        <div
+          class="selected"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img src="./img/main/navbar-icon3.svg" />
+          <select name="" id="country" style="outline: none; cursor: pointer;">
             <option value="UKR">UKR</option>
             <option value="BRT">BRT</option>
             <option value="USA">USA</option>
@@ -70,7 +73,7 @@
     </div>
 
     <div
-      class="header animate__animated animate__bounceInDown animate__delay-1s wow pt-[150px] sm:pl-[100px] pl-10 pr-[60px] pb-10 bg-[#D2D2D2]"
+      class="header min-h-[85vh] animate__animated animate__bounceInDown animate__delay-1s wow pt-[150px] sm:pl-[100px] pl-10 pr-[60px] pb-10 bg-[#D2D2D2]"
     >
       <p class="text-base inline-block">Главная</p>
       &nbsp;<i class="fa-solid fa-chevron-right"></i>
@@ -81,7 +84,7 @@
       </div>
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">
             Все ли товары можно доставить под минимальную комиссию?
@@ -118,7 +121,7 @@
 
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">
             Почему доставляем под 0%? В чем наш интерес?
@@ -154,7 +157,7 @@
       </div>
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">
             Все ли товары можно доставить под минимальную комиссию?
@@ -190,7 +193,7 @@
       </div>
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">
             Какими транспортными компаниями осуществляется доставка заказов по
@@ -227,7 +230,7 @@
       </div>
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">
             Какие сроки поставки с момента совершения заказа?
@@ -263,7 +266,7 @@
       </div>
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">Заказ и оплата бу товаров</p>
           <i class="fa-solid fa-plus"></i>
@@ -297,7 +300,7 @@
       </div>
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl pr-10">
             Можно ли использовать адрес нашего склада в Польше для совершения
@@ -336,7 +339,7 @@
 
       <div>
         <div
-          class="flex hover:bg-cyan-700 p-2 rounded-md hover:text-white hover:p-2 hover:rounded-md hover:italic duration-500 items-center justify-between"
+          class="flex p-2 rounded-md hvr-shutter-out-horizontal duration-500 items-center justify-between"
         >
           <p class="font-bold text-0xl">
             Можно ли внести изменения в сделанный заказ?
